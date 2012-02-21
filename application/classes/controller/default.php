@@ -32,7 +32,11 @@ class Controller_Default extends Controller_Template {
                 );
  
                 $scripts = array(
-                        'media/js/jquery-1.5.1.min.js',
+						'http://code.jquery.com/jquery-1.7.1.min.js',
+						'media/js/block.js',
+						'media/js/calculate.js',
+						'media/js/form.js',
+						
                 );
  
                 $this->template->styles = array_merge( $this->template->styles, $styles );

@@ -268,3 +268,93 @@
 --
 #0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-02-21 11:31:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:31:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:31:13 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:13 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:31:13 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:13 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:31:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:31:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:31:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:31:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:31:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:35:20 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:35:20 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 11:35:20 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-02-21 11:35:20 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-02-21 12:37:59 --- ERROR: ErrorException [ 1 ]: Call to undefined method Form::dropdown() ~ APPPATH\views\form.php [ 11 ]
+2012-02-21 12:37:59 --- STRACE: ErrorException [ 1 ]: Call to undefined method Form::dropdown() ~ APPPATH\views\form.php [ 11 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-02-21 12:38:41 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_VARIABLE ~ APPPATH\views\form.php [ 1 ]
+2012-02-21 12:38:41 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_VARIABLE ~ APPPATH\views\form.php [ 1 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-02-21 12:38:42 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_VARIABLE ~ APPPATH\views\form.php [ 1 ]
+2012-02-21 12:38:42 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_VARIABLE ~ APPPATH\views\form.php [ 1 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-02-21 12:38:57 --- ERROR: ErrorException [ 1 ]: Call to undefined method Form::dropdown() ~ APPPATH\views\form.php [ 12 ]
+2012-02-21 12:38:57 --- STRACE: ErrorException [ 1 ]: Call to undefined method Form::dropdown() ~ APPPATH\views\form.php [ 12 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-02-21 12:38:57 --- ERROR: ErrorException [ 1 ]: Call to undefined method Form::dropdown() ~ APPPATH\views\form.php [ 12 ]
+2012-02-21 12:38:57 --- STRACE: ErrorException [ 1 ]: Call to undefined method Form::dropdown() ~ APPPATH\views\form.php [ 12 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-02-21 12:40:25 --- ERROR: ErrorException [ 8 ]: Undefined variable: selection ~ APPPATH\views\form.php [ 12 ]
+2012-02-21 12:40:25 --- STRACE: ErrorException [ 8 ]: Undefined variable: selection ~ APPPATH\views\form.php [ 12 ]
+--
+#0 C:\xampp\htdocs\kohana\application\views\form.php(12): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\kohana\application\views\default.php(60): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\kohana\system\classes\kohana\view.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\kohana\system\classes\kohana\view.php(343): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\kohana\system\classes\kohana\controller\template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\kohana\application\classes\controller\default.php(45): Kohana_Controller_Template->after()
+#6 [internal function]: Controller_Default->after()
+#7 C:\xampp\htdocs\kohana\system\classes\kohana\request\client\internal.php(121): ReflectionMethod->invoke(Object(Controller_Form))
+#8 C:\xampp\htdocs\kohana\system\classes\kohana\request\client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#9 C:\xampp\htdocs\kohana\system\classes\kohana\request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#11 {main}
