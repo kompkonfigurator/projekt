@@ -51,11 +51,6 @@ class Controller_Default extends Controller_Template {
     }
  
     public function after() {
-		 if($this->redirect !== NULL)
-        {
-            Request::initial()->redirect($this->redirect);
-        }
-		
         if ($this->auto_render)
         {
                 $styles = array(

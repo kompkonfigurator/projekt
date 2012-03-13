@@ -359,3 +359,163 @@
 #9 C:\xampp\htdocs\kohana\system\classes\kohana\request.php(1138): Kohana_Request_Client->execute(Object(Request))
 #10 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
 #11 {main}
+2012-03-13 13:20:19 --- ERROR: Database_Exception [ 2 ]: mysql_connect() [function.mysql-connect]: Access denied for user 'kohana'@'localhost' (using password: YES) ~ MODPATH/database/classes/kohana/database/mysql.php [ 67 ]
+2012-03-13 13:20:19 --- STRACE: Database_Exception [ 2 ]: mysql_connect() [function.mysql-connect]: Access denied for user 'kohana'@'localhost' (using password: YES) ~ MODPATH/database/classes/kohana/database/mysql.php [ 67 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/mysql.php(432): Kohana_Database_MySQL->connect()
+#1 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database.php(473): Kohana_Database_MySQL->escape('plyta')
+#2 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query/builder.php(116): Kohana_Database->quote('plyta')
+#3 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query/builder/select.php(370): Kohana_Database_Query_Builder->_compile_conditions(Object(Database_MySQL), Array)
+#4 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(228): Kohana_Database_Query_Builder_Select->compile(Object(Database_MySQL))
+#5 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#6 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#7 [internal function]: Controller_Form->action_index()
+#8 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#9 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#10 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#11 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#12 {main}
+2012-03-13 13:32:39 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 13:32:39 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(1, 'SELECT * FROM `...', false, Array)
+#1 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#2 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#3 [internal function]: Controller_Form->action_index()
+#4 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-03-13 13:32:40 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 13:32:40 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(1, 'SELECT * FROM `...', false, Array)
+#1 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#2 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#3 [internal function]: Controller_Form->action_index()
+#4 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-03-13 13:32:52 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 13:32:52 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(1, 'SELECT * FROM `...', false, Array)
+#1 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#2 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#3 [internal function]: Controller_Form->action_index()
+#4 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-03-13 13:32:53 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 13:32:53 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(1, 'SELECT * FROM `...', false, Array)
+#1 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#2 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#3 [internal function]: Controller_Form->action_index()
+#4 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-03-13 13:32:53 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 13:32:53 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(1, 'SELECT * FROM `...', false, Array)
+#1 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#2 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#3 [internal function]: Controller_Form->action_index()
+#4 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-03-13 13:32:54 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 13:32:54 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(1, 'SELECT * FROM `...', false, Array)
+#1 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#2 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#3 [internal function]: Controller_Form->action_index()
+#4 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-03-13 13:56:05 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 13:56:05 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.produkty' doesn't exist [ SELECT * FROM `produkty` WHERE `co` = 'plyta' ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(1, 'SELECT * FROM `...', false, Array)
+#1 /opt/lampp/htdocs/kohana/application/classes/model/form.php(7): Kohana_Database_Query->execute()
+#2 /opt/lampp/htdocs/kohana/application/classes/controller/form.php(8): Model_Form->get_produkt('plyta')
+#3 [internal function]: Controller_Form->action_index()
+#4 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-03-13 15:03:50 --- ERROR: Database_Exception [ 1146 ]: Table 'kohana.users' doesn't exist [ SHOW FULL COLUMNS FROM `users` ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-03-13 15:03:50 --- STRACE: Database_Exception [ 1146 ]: Table 'kohana.users' doesn't exist [ SHOW FULL COLUMNS FROM `users` ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /opt/lampp/htdocs/kohana/modules/database/classes/kohana/database/mysql.php(360): Kohana_Database_MySQL->query(1, 'SHOW FULL COLUM...', false)
+#1 /opt/lampp/htdocs/kohana/modules/orm/classes/kohana/orm.php(1504): Kohana_Database_MySQL->list_columns('users')
+#2 /opt/lampp/htdocs/kohana/modules/orm/classes/kohana/orm.php(392): Kohana_ORM->list_columns(true)
+#3 /opt/lampp/htdocs/kohana/modules/orm/classes/kohana/orm.php(337): Kohana_ORM->reload_columns()
+#4 /opt/lampp/htdocs/kohana/modules/orm/classes/kohana/orm.php(246): Kohana_ORM->_initialize()
+#5 /opt/lampp/htdocs/kohana/application/classes/model/user.php(6): Kohana_ORM->__construct(NULL)
+#6 /opt/lampp/htdocs/kohana/modules/orm/classes/kohana/orm.php(37): Model_User->__construct(NULL)
+#7 /opt/lampp/htdocs/kohana/application/classes/controller/default.php(19): Kohana_ORM::factory('user')
+#8 [internal function]: Controller_Default->__construct(Object(Request), Object(Response))
+#9 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client/internal.php(101): ReflectionClass->newInstance(Object(Request), Object(Response))
+#10 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#11 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#12 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#13 {main}
+2012-03-13 15:08:09 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: login.php ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-03-13 15:08:09 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: login.php ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-03-13 15:08:37 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL login was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-03-13 15:08:37 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL login was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-03-13 15:09:12 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL home was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-03-13 15:09:12 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL home was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-03-13 15:11:41 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL login was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-03-13 15:11:41 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL login was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-03-13 15:12:00 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: login.php ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-03-13 15:12:00 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: login.php ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-03-13 15:14:15 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL form/login was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-03-13 15:14:15 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL form/login was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /opt/lampp/htdocs/kohana/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /opt/lampp/htdocs/kohana/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-03-13 15:14:24 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: login.php ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-03-13 15:14:24 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: login.php ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /opt/lampp/htdocs/kohana/index.php(109): Kohana_Request->execute()
+#1 {main}
