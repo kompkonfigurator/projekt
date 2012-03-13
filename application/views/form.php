@@ -1,5 +1,5 @@
 ﻿<?php
-	$plyta = DB::select()->from('produkty')->where('co', '=', 'plyta')->execute();
+	/*$plyta = DB::select()->from('produkty')->where('co', '=', 'plyta')->execute();
 	$procesor = DB::select()->from('produkty')->where('co', '=', 'procesor')->execute();
 	$pamiec = DB::select()->from('produkty')->where('co', '=', 'pamiec')->execute();
 	$karta_graf = DB::select()->from('produkty')->where('co', '=', 'karta_graf')->execute();
@@ -9,7 +9,7 @@
 	$naped = DB::select()->from('produkty')->where('co', '=', 'naped')->execute();
 	$karta_muz = DB::select()->from('produkty')->where('co', '=', 'karta_muz')->execute();
 	$mysz = DB::select()->from('produkty')->where('co', '=', 'mysz')->execute();
-	$klawiatura = DB::select()->from('produkty')->where('co', '=', 'klawiatura')->execute();
+	$klawiatura = DB::select()->from('produkty')->where('co', '=', 'klawiatura')->execute();*/
 ?>
 <?php print form::open(); ?>
 <table border="1" cellpadding="0" cellspacing="0">
@@ -22,7 +22,7 @@
 <option value="Socket 1156">Socket 1156</option>
 <option value="Socket 1366">Socket 1366</option>
 </select>
-</td><td>Płyta Główna:</td><td><?php print form::select('komp_plyta', $plyta->as_array(NULL, 'name'), NULL, array('style' => 'width:300px', 'class' => 'sock_depend')); ?></td><td class="sock_dep_price" id="plyta_cena" class="cena"></td><td id="plyta_link"></td><td id="plyta_opis"></td><td id="plyta_sklep"><?php print form::select('komp_plyta_sklep', NULL, NULL, array('style' => 'width:200px', 'class' => 'sock_depend'),NULL,'standard'); ?></td></tr>
+</td><td>Płyta Główna:</td><td><?php print form::select('komp_plyta', $plyta, NULL, array('style' => 'width:300px', 'class' => 'sock_depend')); ?></td><td class="sock_dep_price" id="plyta_cena" class="cena"></td><td id="plyta_link"></td><td id="plyta_opis"></td><td id="plyta_sklep"><?php print form::select('komp_plyta_sklep', NULL, NULL, array('style' => 'width:200px', 'class' => 'sock_depend'),NULL,'standard'); ?></td></tr>
 
 <tr><td></td><td>Procesor:</td><td><?php print form::select('komp_procesor', NULL, NULL, array('style' => 'width:300px', 'class' => 'sock_depend')); ?></td><td class="sock_dep_price" id="procesor_cena" class="cena"></td><td id="procesor_link"></td><td id="procesor_opis"></td><td id="procesor_sklep"><?php print form::select('komp_procesor_sklep', NULL, NULL, array('style' => 'width:200px', 'class' => 'sock_depend'),NULL,'standard'); ?></td></tr>
 
