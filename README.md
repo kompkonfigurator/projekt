@@ -8,3 +8,5 @@ Dane do polaczenia z MySQL
 * User: kohana
 * Has³o: kohana
 * Baza: kohana
+
+http://wklej.org/id/708995/ - tabelka users
