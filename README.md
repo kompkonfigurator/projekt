@@ -1,8 +1,8 @@
-# Projekt zespo≥owy
+Ôªø# Projekt zespo≈Çowy
 http://wklej.org/id/707789/ - algorytm aktualizacji bazy danych
 
-Dane do po≥πczenia z MySQL
+Dane do po≈ÇƒÖczenia z MySQL
 
 * User: kohana
-* Has≥o: kohana
+* Has≈Ço: kohana
 * Baza: kohana
