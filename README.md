@@ -1,10 +1,10 @@
-﻿# Projekt zespołowy
+# Projekt zespo�owy
 ___
 
 http://wklej.org/id/707789/ - algorytm aktualizacji bazy danych
 
-Dane do połączenia z MySQL
+Dane do polaczenia z MySQL
 
 * User: kohana
-* Hasło: kohana
+* Has�o: kohana
 * Baza: kohana
