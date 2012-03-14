@@ -19,17 +19,20 @@
 <div id="templatemo_container">
 <div id="templatemo_top">
     	<div class="sitename_panel">
-        	<div class="sitename"><span>Web</span> Hosting</div>
+        	<div class="sitename">Konfig<span>urator</span> </div>
       </div>
         
-        <div class="livechat_panel">
-        	<a href="#"><?php echo html::image('media/img/templatemo_livechat.gif'); ?></a>
+       <div class="log">
+
+<a href="/auth/twitter"><img src="../../twitter.png" alt="twitter" /></a>
+<a href="/auth/facebook"><img src="facebook.png" alt="facebook" /></a>
+
+
+       
+          
         </div>
         
-        <div class="freecall_panel">
-        	<div class="bigfont">Sales &amp; Support</div>
-            <div class="phoneno">Toll Free <span>(100) 200-3000</span></div>
-        </div>
+        
         
     </div>
     
@@ -38,11 +41,11 @@
     <div id="templatemo_content">
 	   
     	<div class="banner">
-        	<h3>Special Reseller Package</h3>
+        	<h3>Tylko dzięki naszej aplikacji</h3>
             <ul>
-                <li>2,000 GB disk space</li>
-                <li>100,000 GB premium bandwidth</li>
-                <li>Unlimited hosting accounts</li>
+                <li>w bardzo łatwy sposób</li>
+                <li>złożysz swój wymarzony kompute</li>
+                <li>za najniższą cenę na rynku</li>
             </ul>      
 			<div class="readmore_black"><a href="#">Learn more</a></div>
         </div>
@@ -50,8 +53,10 @@
        	<div id="templatemo_menu">
             <div class="menuleft"></div>
                 <ul>
-                    <li><?php echo html::anchor('/', 'Home'); ?></li>
+                    <li><?php echo html::anchor('/', 'Strona Główna'); ?></li>
                     <li><?php echo html::anchor('/form', 'Formularz'); ?></li>
+                    <li><?php echo html::anchor('/auth/login', 'Logowanie'); ?></li>
+
                 </ul>
             <div class="menuright"></div>    	
         </div>
