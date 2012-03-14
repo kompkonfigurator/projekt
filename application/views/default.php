@@ -24,8 +24,8 @@
         
        <div class="log">
 
-<a href="/auth/twitter"><img src="../../twitter.png" alt="twitter" /></a>
-<a href="/auth/facebook"><img src="facebook.png" alt="facebook" /></a>
+<a href="/auth/twitter"><img src="http://i.imgur.com/YGHMy.png" alt="twitter" /></a>
+<a href="/auth/facebook"><img src="http://i.imgur.com/Ise7s.png" alt="facebook" />
 
 
        
