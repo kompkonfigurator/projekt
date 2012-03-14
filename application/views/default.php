@@ -47,7 +47,7 @@
                 <li>złożysz swój wymarzony kompute</li>
                 <li>za najniższą cenę na rynku</li>
             </ul>      
-			<div class="readmore_black"><a href="#">Learn more</a></div>
+			
         </div>
         
        	<div id="templatemo_menu">
