@@ -1,17 +1,4 @@
-﻿<?php
-	/*$plyta = DB::select()->from('produkty')->where('co', '=', 'plyta')->execute();
-	$procesor = DB::select()->from('produkty')->where('co', '=', 'procesor')->execute();
-	$pamiec = DB::select()->from('produkty')->where('co', '=', 'pamiec')->execute();
-	$karta_graf = DB::select()->from('produkty')->where('co', '=', 'karta_graf')->execute();
-	$dysk = DB::select()->from('produkty')->where('co', '=', 'dysk')->execute();
-	$obudowa = DB::select()->from('produkty')->where('co', '=', 'obudowa')->execute();
-	$zasilacz = DB::select()->from('produkty')->where('co', '=', 'zasilacz')->execute();
-	$naped = DB::select()->from('produkty')->where('co', '=', 'naped')->execute();
-	$karta_muz = DB::select()->from('produkty')->where('co', '=', 'karta_muz')->execute();
-	$mysz = DB::select()->from('produkty')->where('co', '=', 'mysz')->execute();
-	$klawiatura = DB::select()->from('produkty')->where('co', '=', 'klawiatura')->execute();*/
-?>
-<?php print form::open(); ?>
+﻿<?php print form::open(); ?>
 <table border="1" cellpadding="0" cellspacing="0">
 <tr><td><select id="sel_sock" name="sel_sock" onchange="select_sock(this.value);">
 <option value="nie"></option>
