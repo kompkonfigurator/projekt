@@ -117,22 +117,3 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
 		'controller' => 'default',
 		'action'     => 'index',
 	));
-Route::set('auth', '<action>', array('action' => 'log(in|out)|register'))
-    ->defaults(array(
-        'controller' => 'auth',
-        ));
-Route::set('static', '<action>', array('action' => 'about|contact'))
-    ->defaults(array(
-        'controller' => 'static',
-        ));
-//Route::set('admin', '(user(/<action>(/<id>)))')
-//	->defaults(array(
-//		'directory'  => 'admin',
-//		'controller' => 'user',
-//		'action' => 'index',
-//	));
-Route::set('default', '(<controller>(/<action>(/<id>(/<id2>))))')
-	->defaults(array(
-		'controller' => 'default',
-		'action'     => 'index',
-	));

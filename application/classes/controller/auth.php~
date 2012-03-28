@@ -2,24 +2,23 @@
  
 class Controller_Auth extends Controller_Default {
  
+
         public function action_login() {
-            $this->template->content='login';
-            $this->template->title=__('Login');
-            if(isset($_POST['submit'])){
-            $r = Auth::instance()->login($_POST['username'], $_POST['password']);
-            }
- 
-            if (Auth::instance()->logged_in()) {
-               echo 'zalogowany';
-                echo Auth::instance()->get_user();
-               if (Auth::instance()->logged_in('admin')) {
-                echo 'to jest admin';
-               }
-            }
-             else {
-                echo "User is not logged in";
+        $this->template->content=View::factory('login')
+                ->bind('error',$error)
+                ->bind('title',$this->template->title);
+        $this->template->title=__('Login');
+        $this->template->top_tab='login';
+        $this->template->error=NULL;
+        if(isset($_POST['submit'])){
+            $auth = Auth::instance()->login($_POST['username'], $_POST['password']);
+            if(!$auth){
+                $error='<p class="red">'.__('Incorrect login or password').'</p>';
+            }else{
+                $this->request->redirect('user');
             }
         }
+    }
         public function action_logout() {
             Auth::instance()->logout();
             $this->request->redirect('/');

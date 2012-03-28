@@ -6,10 +6,11 @@ class Controller_Default extends Controller_Template {
     public $redirect = NULL;
     protected $SES;
     public $user;
+ 
     public function  __construct(Request $request, Response $response) {
         parent::__construct($request, $response);
-
-   //Create sesion
+ 
+        //Create sesion
         if(!isset ($_SESSION)){
             $this->SES = Session::instance();
         }
@@ -22,7 +23,6 @@ class Controller_Default extends Controller_Template {
  
         //Create user
         $this->user = ORM::factory('user', $_SESSION['user']);
-
     }
  
     public function before() {
@@ -30,7 +30,6 @@ class Controller_Default extends Controller_Template {
  
         if ($this->auto_render)
         {
-            // Initialize empty values
             $this->template->title = '';
             $this->template->description = '';
             $this->template->content = '';
@@ -38,24 +37,22 @@ class Controller_Default extends Controller_Template {
             $this->template->styles = array();
             $this->template->scripts = array();
             $this->template->top_tab = '';
-
-   if($_SESSION['user']){
+ 
+        if($_SESSION['user']){
             $this->template->user = $this->user;
         }
  
         if($this->request->action() !== 'login'){
             $this->SES->delete('prev_url');
         }
-
         }
     }
  
     public function after() {
-		 if($this->redirect !== NULL)
+        if($this->redirect !== NULL)
         {
             Request::initial()->redirect($this->redirect);
         }
-		
         if ($this->auto_render)
         {
                 $styles = array(
@@ -63,11 +60,7 @@ class Controller_Default extends Controller_Template {
                 );
  
                 $scripts = array(
-						'http://code.jquery.com/jquery-1.7.1.min.js',
-						'media/js/block.js',
-						'media/js/calculate.js',
-						'media/js/form.js',
-						
+                        'media/js/jquery-1.5.1.min.js',
                 );
  
                 $this->template->styles = array_merge( $this->template->styles, $styles );
@@ -79,5 +72,6 @@ class Controller_Default extends Controller_Template {
     public function action_index() {
         $this->template->title = __('Home');
         $this->template->content='home';
+        $this->template->top_tab='home';
     }
 }

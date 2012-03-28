@@ -1,78 +1,56 @@
 <?php defined('SYSPATH') or die('No direct script access.');
- 
+
 class Controller_Default extends Controller_Template {
- 
+
     public $template = 'default';
-    public $redirect = NULL;
-    protected $SES;
-    public $user;
+
     public function  __construct(Request $request, Response $response) {
         parent::__construct($request, $response);
 
-   //Create sesion
-        if(!isset ($_SESSION)){
-            $this->SES = Session::instance();
+        if(isset($_COOKIE['lang'])){
+            setcookie("lang", $_COOKIE['lang'],31536000 + time(),'/');
+            I18n::lang($_COOKIE['lang']);
         }
- 
-        //Save user id to session
-        if(!$this->SES->get('user')){
-            $usr = ORM::factory('user');
-            $this->SES->set('user', $usr->id);
-        }
- 
-        //Create user
-        $this->user = ORM::factory('user', $_SESSION['user']);
-
     }
- 
+
     public function before() {
       parent::before();
- 
+
         if ($this->auto_render)
         {
             // Initialize empty values
             $this->template->title = '';
             $this->template->description = '';
             $this->template->content = '';
- 
+
             $this->template->styles = array();
             $this->template->scripts = array();
             $this->template->top_tab = '';
-
-   if($_SESSION['user']){
-            $this->template->user = $this->user;
-        }
- 
-        if($this->request->action() !== 'login'){
-            $this->SES->delete('prev_url');
-        }
-
         }
     }
- 
+
     public function after() {
         if ($this->auto_render)
         {
                 $styles = array(
-                        'media/css/templatemo_style.css' => 'screen',
+                        'media/css/style.css' => 'screen',
                 );
- 
+
                 $scripts = array(
-						'http://code.jquery.com/jquery-1.7.1.min.js',
-						'media/js/block.js',
-						'media/js/calculate.js',
-						'media/js/form.js',
-						
+                        'media/js/jquery-1.6.2.min.js',
                 );
- 
+
                 $this->template->styles = array_merge( $this->template->styles, $styles );
                 $this->template->scripts = array_merge( $this->template->scripts, $scripts );
+                $this->template->langs=Kohana::$config->load('lang');
         }
         parent::after();
     }
- 
+
     public function action_index() {
+        $this->template->content=View::factory('home');
         $this->template->title = __('Home');
-        $this->template->content='home';
+        $this->template->top_tab='home';
     }
 }
+?>

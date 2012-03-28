@@ -1,16 +1,17 @@
-<h1><?php echo "Logowanie : "?></h1>
-<br/>
-<br/>
+<h2><?php echo $title?></h2>
 <?php
-echo  Form::open('/auth/login').
-    '<fieldset>'.
-        '<legend>'.__('Pole logowania').'</legend>'.
-        $error.
-        Form::label('nick', __('Login').':').'<br/>'.
-        Form::input('nick', $data['nick']).'<br />'.
+echo  Form::open('/auth/login', array('class'=>'form')).
+'<fieldset>'.
+    '<legend>'.__('Fill the fields').'</legend>'.
+            //$error.
+            Form::label('username', __('Nick').':').
+            Form::input('username').'<br />'.
  
-        Form::label('pass', __('Hasło').':').'<br/>'.
-        Form::password('pass', $data['pass']).'<br />'.
-    '</fieldset>'.'<br/>'.'<br/>'.
-    Form::submit('submit', __('Zaloguj')).
-Form::close();?>
+            Form::label('password', __('Password').':').
+            Form::password('password').'<br />'.
+ 
+'</fieldset>'.
+Form::submit('submit', __('Login')).
+Form::close();
+?>
+
