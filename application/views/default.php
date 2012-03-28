@@ -19,13 +19,16 @@
 <div id="templatemo_container">
 <div id="templatemo_top">
     	<div class="sitename_panel">
-        	<div class="sitename">Konfig<span>urator</span> </div>
+        	<div class="sitename">Konfig<span>urator</span>
+        	<br/>
+    </div>
+        	
       </div>
         
        <div class="log">
-
-<a href="/auth/twitter"><img src="http://i.imgur.com/YGHMy.png" alt="twitter" /></a>
-<a href="/auth/facebook"><img src="http://i.imgur.com/Ise7s.png" alt="facebook" />
+<a href="/kohana/form">	<img src="http://icons.iconarchive.com/icons/icons-land/vista-hardware-devices/128/Home-Server-icon.png" alt="comp" border="0"/></a>
+<a href="/kohana/auth/twitter"><img src="http://icons.iconarchive.com/icons/iconshock/free-social/128/twitter-icon.png" alt="twitter" border="0" /> </a>
+<a href="/kohana/auth/facebook">	<img src="http://icons.iconarchive.com/icons/iconshock/free-social/128/facebook-icon.png" alt="facebook" border="0"/> </a> 
 
 
        
@@ -53,16 +56,18 @@
        	<div id="templatemo_menu">
             <div class="menuleft"></div>
                 <ul>
-                    <li><?php echo html::anchor('/', 'Strona Główna'); ?></li>
-                    <li><?php echo html::anchor('/form', 'Formularz'); ?></li>
-                    <li><?php echo html::anchor('/auth/login', 'Logowanie'); ?></li>
+                    <li><?php echo html::anchor('/', '<img src="http://icons.iconarchive.com/icons/artua/mac/16/Home-icon.png" alt="comp" border="0"/> - Strona Główna'); ?></li>
+                    <li><?php echo html::anchor('/form', '<img src="http://icons.iconarchive.com/icons/icons-land/vista-hardware-devices/16/Home-Server-icon.png" alt="comp" border="0"/> - Formularz'); ?></li>
+                    <li><?php echo html::anchor('/user/create', '<img src="http://icons.iconarchive.com/icons/webiconset/application/16/Register-icon.png" alt="comp" border="0"/> - Rejestracja'); ?></li>
+                    <li><?php echo html::anchor('/user/login', '<img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/16/Alarm-Padlock-icon.png" alt="comp" border="0"/> - Logowanie'); ?></li>
 
                 </ul>
             <div class="menuright"></div>    	
         </div>
         
       <div id="templatemo_boxarea">
-<?php include Kohana::find_file('views', $content);?>
+		  <?=$content;?>
+
         </div>
             </div>
     <div class="templatemo_content_bottom"></div>

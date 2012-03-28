@@ -71,7 +71,7 @@ class Controller_Default extends Controller_Template {
  
     public function action_index() {
         $this->template->title = __('Home');
-        $this->template->content='home';
+        $this->template->content=view::factory('home');
         $this->template->top_tab='home';
     }
 }

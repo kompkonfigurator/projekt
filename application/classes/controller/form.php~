@@ -4,7 +4,7 @@ class Controller_Form extends Controller_Default {
      public function action_index() {
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');
-        $this->template->content=view::factory('form');//view::factory?
+        $this->template->content='form';//view::factory?
 		$this->template->plyta = $form->get_produkt('plyta');
 		$this->template->procesor = $form->get_produkt('procesor');
 		$this->template->pamiec = $form->get_produkt('pamiec');
