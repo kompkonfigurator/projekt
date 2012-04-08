@@ -4,18 +4,18 @@ class Controller_Form extends Controller_Default {
      public function action_index() {
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');
-        $this->template->content=view::factory('form');//view::factory?
-		$this->template->plyta = $form->get_produkt('plyta');
-		$this->template->procesor = $form->get_produkt('procesor');
-		$this->template->pamiec = $form->get_produkt('pamiec');
-		$this->template->karta_graf = $form->get_produkt('karta_graf');
-		$this->template->dysk = $form->get_produkt('dysk');
-		$this->template->obudowa = $form->get_produkt('obudowa');
-		$this->template->zasilacz = $form->get_produkt('zasilacz');
-		$this->template->naped = $form->get_produkt('naped');
-		$this->template->karta_muz = $form->get_produkt('karta_muz');
-		$this->template->mysz = $form->get_produkt('mysz');
-		$this->template->klawiatura = $form->get_produkt('klawiatura');
+        $this->template->content = View::factory('form');
+		$this->template->content->plyta = $form->get_produkt('plyta');
+		$this->template->content->procesor = $form->get_produkt('procesor');
+		$this->template->content->pamiec = $form->get_produkt('pamiec');
+		$this->template->content->karta_graf = $form->get_produkt('karta_graf');
+		$this->template->content->dysk = $form->get_produkt('dysk');
+		$this->template->content->obudowa = $form->get_produkt('obudowa');
+		$this->template->content->zasilacz = $form->get_produkt('zasilacz');
+		$this->template->content->naped = $form->get_produkt('naped');
+		$this->template->content->karta_muz = $form->get_produkt('karta_muz');
+		$this->template->content->mysz = $form->get_produkt('mysz');
+		$this->template->content->klawiatura = $form->get_produkt('klawiatura');
     }
  }
 ?>
