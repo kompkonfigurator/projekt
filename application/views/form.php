@@ -38,3 +38,6 @@
 <tr><td></td><td>Klawiatura:</td><td><?php print form::select('komp_klawiatura', NULL, NULL, array('style' => 'width:300px')); ?></td><td id="klawiatura_cena" class="cena"></td><td id="klawiatura_link"></td><td id="klawiatura_opis"></td><td id="klawiatura_sklep"><?php print form::select('komp_klawiatura_sklep', NULL, NULL, array('style' => 'width:200px')); ?></td></tr>
 
 <tr><td colspan="3" align="right">Suma</td><td id="suma" colspan="3" align="left"></td></tr></table>
+
+<?php echo Form::submit(NULL, 'Post') ?>
+<?php echo Form::close() ?>

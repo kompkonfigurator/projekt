@@ -1,4 +1,4 @@
-# Projekt zespo�owy
+﻿# Projekt zespołowy
 ___
 
 http://wklej.org/id/707789/ - algorytm aktualizacji bazy danych
@@ -16,4 +16,6 @@ http://wklej.org/id/718828/
 logowanie dostepne pod:
 localhost/user/login
 
-Tam r�wniez znajduje sie link do rejestracji
+Tam równiez znajduje sie link do rejestracji
+
+Zrzut całej bazy 'kohana' (stan na 10.04) - http://wklej.org/hash/87307e9d410/

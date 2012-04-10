@@ -16,6 +16,13 @@ class Controller_Form extends Controller_Default {
 		$this->template->content->karta_muz = $form->get_produkt('karta_muz');
 		$this->template->content->mysz = $form->get_produkt('mysz');
 		$this->template->content->klawiatura = $form->get_produkt('klawiatura');
-    }
+    
+		if($this->request->post())
+		{
+			if($form->add_produkt($_POST)) $this->request->redirect('/');
+		}
+	
+	}
+	
  }
 ?>
