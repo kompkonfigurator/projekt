@@ -23,6 +23,23 @@ class Controller_Form extends Controller_Default {
 		}
 	
 	}
-	
+	public function action_update() {
+		$id = $this->request->param('id');
+		$form = Model::factory('form');
+        $this->template->title = __('Formularz');
+        $this->template->content = View::factory('form');
+		$konf = $form->get_konf($id);
+		//echo Debug::vars($konf);
+		foreach($konf[0] as $key => $val)
+		{
+			if(preg_match('/id_.*/', $key) && !empty($val) && $val!='NULL')
+			{
+				$key = str_replace('id_', '', $key);
+				
+				$this->template->content->{$key} = $form->get_produktById($val);
+			}
+			else $this->template->content->{$key} = '';
+		}
+	}
  }
 ?>
