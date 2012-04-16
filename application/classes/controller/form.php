@@ -2,6 +2,7 @@
  
 class Controller_Form extends Controller_Default {
      public function action_index() {
+	 error_reporting(E_ALL & ~E_NOTICE);
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');
         $this->template->content = View::factory('form');
@@ -24,7 +25,11 @@ class Controller_Form extends Controller_Default {
 	
 	}
 	public function action_update() {
-		$id = $this->request->param('id');
+	error_reporting(E_ALL & ~E_NOTICE);
+		if(!$id = $this->request->param('id'))
+		{
+			$this->request->redirect('/');
+		}
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');
         $this->template->content = View::factory('form');
@@ -36,10 +41,31 @@ class Controller_Form extends Controller_Default {
 			{
 				$key = str_replace('id_', '', $key);
 				
-				$this->template->content->{$key} = $form->get_produktById($val);
+				$this->template->content->{$key} = $form->get_produkt($key);
+				$this->template->content->{$key.'_selected'} = array_keys($form->get_produktById($val));
+				$this->template->content->{$key.'_selected'} = $this->template->content->{$key.'_selected'}[0];
 			}
-			else $this->template->content->{$key} = '';
+			else
+			{
+				$this->template->content->{$key} = NULL;
+				$this->template->content->{$key.'_selected'} = NULL;
+			}
+
 		}
+		
+		if($this->request->post())
+		{
+			if($form->update_produkt($_POST, $id)) $this->request->redirect('/');
+		}
+	}
+	public function action_delete()
+	{
+		$form = Model::factory('form');
+		if(!$id = $this->request->param('id'))
+		{
+			$this->request->redirect('/');
+		}
+		if($form->delete_produkt($id)) $this->request->redirect('/');
 	}
  }
 ?>

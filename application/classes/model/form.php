@@ -26,6 +26,15 @@ Class Model_Form extends Model
 	}
 	public function update_produkt($arr, $id)
 	{
-		$update = DB::update('konfiguracja')->set($arr)->where('id', '=', $id);
+		foreach($arr as $key => $val)
+		{
+			if(!preg_match('/id_.*/', $key)) unset($arr[$key]);
+		}
+		error_reporting(E_ALL & ~E_NOTICE);
+		return $update = DB::update('konfiguracja')->set($arr)->where('id', '=', $id)->execute();
+	}
+	public function delete_produkt($id)
+	{
+		return $delete = DB::delete('konfiguracja')->where('id', '=', $id)->execute();
 	}
 }
