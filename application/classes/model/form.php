@@ -1,7 +1,23 @@
-<?php defined('SYSPATH') OR die('No Direct Script Access');
+﻿<?php defined('SYSPATH') OR die('No Direct Script Access');
 
 Class Model_Form extends Model
 {
+	public function return_model()
+	{
+		return $model = array('id_plyta' => 'Płyta Główna',
+		'id_procesor' => 'Procesor',
+		'id_pamiec' => 'Pamięć',
+		'id_pamiec2' => 'Pamięć',
+		'id_karta_graf' => 'Karta graficzna',
+		'id_dysk' => 'Dysk twardy',
+		'id_dysk2' => 'Dysk twardy',
+		'id_obudowa' => 'Obudowa',
+		'id_zasilacz' =>'Zasilacz',
+		'id_naped' => 'Napęd',
+		'id_karta_muz' => 'Karta muzyczna',
+		'id_klawiatura' => 'Klawiatura',
+		'id_mysz' => 'Mysz' );
+	}
 	public function get_produkt($co)
 	{
 		return DB::select()->from('produkty')->where('co', '=', $co)->execute()->as_array('id', 'name');
@@ -10,9 +26,17 @@ Class Model_Form extends Model
 	{
 		return DB::select()->from('produkty')->where('id', '=', $id)->execute()->as_array('id', 'name');
 	}
+	public function getName_byProduktId($id)
+	{
+		return DB::select('name')->from('produkty')->where('id', '=', $id)->execute()->as_array();
+	}
 	public function get_konf($id)
 	{
 		return $query = DB::select()->from('konfiguracja')->where('id', '=', $id)->execute()->as_array();
+	}
+	public function getAllKonf()
+	{
+		return $query = DB::select()->from('konfiguracja')->execute()->as_array();
 	}
 	public function add_produkt($arr)
 	{

@@ -73,5 +73,22 @@ class Controller_Default extends Controller_Template {
         $this->template->title = __('Home');
         $this->template->content=view::factory('home');
         $this->template->top_tab='home';
+		$konf = Model::factory('form');
+		$allkonf = $konf -> getAllKonf();
+		for($i=0; $i<sizeof($allkonf); $i++)
+		{
+		foreach($allkonf[$i] as $key => $val)
+		{
+			if(preg_match('/id_.*/', $key))
+			{
+				//echo Debug::vars($konf -> getName_byProduktId($val));
+				$allkonf[$i][$key] = $konf -> getName_byProduktId($val);
+				$allkonf[$i][$key] = (sizeof($allkonf[$i][$key])!=0)? $allkonf[$i][$key][0]['name'] : NULL;
+			}
+			else unset($allkonf[$i][$key]);
+		}
+		}
+		$this->template->content->konf = $allkonf;
+		$this->template->content->model = $konf -> return_model();
     }
 }
