@@ -85,7 +85,6 @@ class Controller_Default extends Controller_Template {
 				$allkonf[$i][$key] = $konf -> getName_byProduktId($val);
 				$allkonf[$i][$key] = (sizeof($allkonf[$i][$key])!=0)? $allkonf[$i][$key][0]['name'] : NULL;
 			}
-			else unset($allkonf[$i][$key]);
 		}
 		}
 		$this->template->content->konf = $allkonf;

@@ -32,7 +32,8 @@ Class Model_Form extends Model
 	}
 	public function get_konf($id)
 	{
-		return $query = DB::select()->from('konfiguracja')->where('id', '=', $id)->execute()->as_array();
+		$query = DB::select()->from('konfiguracja')->where('id', '=', $id)->execute()->as_array();
+		return $query[0];
 	}
 	public function getAllKonf()
 	{

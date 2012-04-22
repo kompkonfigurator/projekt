@@ -35,7 +35,7 @@ class Controller_Form extends Controller_Default {
         $this->template->content = View::factory('form');
 		$konf = $form->get_konf($id);
 		//echo Debug::vars($konf);
-		foreach($konf[0] as $key => $val)
+		foreach($konf as $key => $val)
 		{
 			if(preg_match('/id_.*/', $key) && !empty($val) && $val!='NULL')
 			{
@@ -66,6 +66,28 @@ class Controller_Form extends Controller_Default {
 			$this->request->redirect('/');
 		}
 		if($form->delete_produkt($id)) $this->request->redirect('/');
+	}
+	public function action_show()
+	{
+		$this->template->title = __('View');
+        $this->template->content = View::factory('show');
+		$form = Model::factory('form');
+		if(!$id = $this->request->param('id'))
+		{
+			$this->request->redirect('/');
+		}
+		$konf = $form->get_konf($id);
+		foreach($konf as $key => $val)
+		{
+			if(preg_match('/id_.*/', $key))
+			{
+				$konf[$key] = $form -> getName_byProduktId($val);
+				$konf[$key] = (sizeof($konf[$key])!=0)? $konf[$key][0]['name'] : NULL;
+			}
+			else unset($konf[$key]);
+		}
+		$this->template->content->konf = $konf;
+		$this->template->content->model = $form -> return_model();
 	}
  }
 ?>
