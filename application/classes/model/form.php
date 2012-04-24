@@ -18,6 +18,22 @@ Class Model_Form extends Model
 		'id_klawiatura' => 'Klawiatura',
 		'id_mysz' => 'Mysz' );
 	}
+	public function return_modelnoid()
+	{
+		return $model = array('plyta' => 'Płyta Główna',
+		'procesor' => 'Procesor',
+		'pamiec' => 'Pamięć',
+		'pamiec2' => 'Pamięć',
+		'karta_graf' => 'Karta graficzna',
+		'dysk' => 'Dysk twardy',
+		'dysk2' => 'Dysk twardy',
+		'obudowa' => 'Obudowa',
+		'zasilacz' =>'Zasilacz',
+		'naped' => 'Napęd',
+		'karta_muz' => 'Karta muzyczna',
+		'klawiatura' => 'Klawiatura',
+		'mysz' => 'Mysz' );
+	}
 	public function get_produkt($co)
 	{
 		return DB::select()->from('produkty')->where('co', '=', $co)->execute()->as_array('id', 'name');
