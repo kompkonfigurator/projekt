@@ -165,3 +165,23 @@
 --
 #0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-04-24 05:35:35 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-04-24 05:35:35 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-04-24 05:36:18 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-04-24 05:36:18 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-04-24 05:36:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-04-24 05:36:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-04-24 05:36:46 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+2012-04-24 05:36:46 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: media/js/jquery-1.5.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1126 ]
+--
+#0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#1 {main}

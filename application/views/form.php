@@ -11,17 +11,19 @@
 </select>
 </td>
 <?php
+	$i=0;
 	foreach($model as $key => $val) :
+		if($i++!=0) echo '<tr><td></td>';
 		if($key=='plyta' || $key =='procesor' || $key == 'pamiec') : 
-			$style = array('style' => 'width:300px', 'class' => 'sock_depend');
+			$style = array('style' => 'width:300px', 'class' => 'sock_depend listen');
 			$styleSklep = array('style' => 'width:200px', 'class' => 'sock_depend');
 		else :
-			$style = array('style' => 'width:300px');
+			$style = array('style' => 'width:300px', 'class' => 'listen');
 			$styleSklep = array('style' => 'width:200px');
 		endif;
 		$name = 'id_'.$key.'_sklep';
 		$name2 = 'id_'.$key;
-		echo '<tr><td>' . $val .'</td><td>'. form::select($name2, ${$key}, ${$key.'_selected'}, $style).'</td>';
+		echo '<td>' . $val .'</td><td>'. form::select($name2, ${$key}, ${$key.'_selected'}, $style).'</td>';
 		echo '<td id="'.$key.'_cena"></td><td>'.form::select($name, NULL, NULL, $styleSklep, NULL, 'standard');
 		echo '</td></tr>';
 	endforeach;

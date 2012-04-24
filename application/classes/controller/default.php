@@ -60,11 +60,11 @@ class Controller_Default extends Controller_Template {
                 );
  
                 $scripts = array(
-                        'media/js/jquery-1.5.1.min.js',
+                        'media/js/jquery.js',
                 );
  
                 $this->template->styles = array_merge( $this->template->styles, $styles );
-                $this->template->scripts = array_merge( $this->template->scripts, $scripts );
+                $this->template->scripts = array_merge( $scripts , $this->template->scripts);
         }
         parent::after();
     }
