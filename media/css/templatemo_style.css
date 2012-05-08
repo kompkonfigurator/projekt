@@ -1,7 +1,39 @@
 /*
 CSS Credit: http:/www.templatemo.com/
 */
+/*
+CSS Credit: http:/www.templatemo.com/
+*/
+#community { width:900px; float:left; }
 
+#community h2 { font:normal bold 18px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color:navy; }
+.box h2 { font-size:18px; background:#e5e3d3; padding:9px 11px; -moz-border-radius:5px 5px 0 0; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px; border-radius:5px 5px 0 0; margin:-15px -10px 0 -10px; margin-bottom:15px; }
+
+#community ul { margin:0; }
+#community li { list-style:none; float:left; width:220px; padding:35px; border-bottom:1px solid #dfe9d2; border-right:1px solid #dfe9d2; border-left:1px solid #fbfaf4; border-top:1px solid #fbfaf4; }
+#community li:nth-child(-n+3) { padding-top:0; border-top:0; }
+#community li:nth-child(3n+1) { padding-left:0; border-left:0; }
+#community li:nth-child(3n) { padding-right:0; border-right:0; }
+#community li:nth-child(3n+2) { width:220px; }
+/* #community li:last-child { width:437px; border-bottom:0; border-right:0; padding-right:240px; position:relative; }  RETURN WHEN TWITTER INTEGRATED */
+#community li h3 { text-transform:uppercase; letter-spacing:1px; font:bold normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; padding-bottom:6px; }
+
+#community li a.icon { padding-left: 70px; padding-right: 0px; min-height:100px; display:block; background-position: top left; background-repeat: no-repeat; }
+#community li a#forum { background-image: url('http://icons.iconarchive.com/icons/media-design/hydropro-v2/48/My-Computer-icon.png'); }
+#community li a#irc { background-image: url('http://icons.iconarchive.com/icons/kyo-tux/aeon/48/Apps-Resource-Hacker-icon.png'); }
+#community li a#stackoverflow { background-image: url('http://icons.iconarchive.com/icons/webiconset/application/48/Register-icon.png'); }
+#community li a#ohloh { background-image: url('http://icons.iconarchive.com/icons/gakuseisean/ivista-2/48/Alarm-Padlock-icon.png'); }
+
+#community li>a:link,
+#community li>a:visited { color:#254241; display:block; }
+#community a:hover,
+#community a:active,
+#community a:focus { color:#254241; text-decoration:none; }
+#community a:link h3,
+#community a:visited h3 { color:#578b14; }
+#community a:hover h3,
+#community a:active h3,
+#community a:focus h3 { color:#578b14; text-decoration:underline; }
 body {
 	margin:0;
 	padding:0;

@@ -21,7 +21,7 @@ class Controller_Form extends Controller_Default {
 		$this->template->content->model = $form->return_modelnoid();
 		if($this->request->post())
 		{
-			if($form->add_produkt($_POST)) $this->request->redirect('/');
+			if($form->add_produkt($_POST)) $this->request->redirect('/home');
 		}
 	
 	}
@@ -56,7 +56,7 @@ class Controller_Form extends Controller_Default {
 		
 		if($this->request->post())
 		{
-			if($form->update_produkt($_POST, $id)) $this->request->redirect('/');
+			if($form->update_produkt($_POST, $id)) $this->request->redirect('/home');
 		}
 	}
 	public function action_delete()
@@ -64,9 +64,9 @@ class Controller_Form extends Controller_Default {
 		$form = Model::factory('form');
 		if(!$id = $this->request->param('id'))
 		{
-			$this->request->redirect('/');
+			$this->request->redirect('/home');
 		}
-		if($form->delete_produkt($id)) $this->request->redirect('/');
+		if($form->delete_produkt($id)) $this->request->redirect('/home');
 	}
 	public function action_show()
 	{
@@ -75,7 +75,7 @@ class Controller_Form extends Controller_Default {
 		$form = Model::factory('form');
 		if(!$id = $this->request->param('id'))
 		{
-			$this->request->redirect('/');
+			$this->request->redirect('/home');
 		}
 		$konf = $form->get_konf($id);
 		foreach($konf as $key => $val)
