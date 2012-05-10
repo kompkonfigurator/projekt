@@ -185,3 +185,27 @@
 --
 #0 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-04-24 09:47:51 --- ERROR: Database_Exception [ 1054 ]: Unknown column 'id_plyta_sklep' in 'field list' [ INSERT INTO `konfiguracja` (`id_plyta`, `id_plyta_sklep`, `id_procesor`, `id_procesor_sklep`, `id_pamiec`, `id_karta_graf`, `id_karta_graf_sklep`, `id_dysk`, `id_dysk_sklep`, `id_obudowa`, `id_obudowa_sklep`, `id_zasilacz`, `id_naped`, `id_karta_muz`, `id_klawiatura`, `id_mysz`) VALUES ('7378', '9075', '7651', '4793', '7730', '8416', '4793', '8043', '14775', '8141', '392', '8285', '8068', '8366', '7754', '7885') ] ~ MODPATH\database\classes\kohana\database\mysql.php [ 194 ]
+2012-04-24 09:47:51 --- STRACE: Database_Exception [ 1054 ]: Unknown column 'id_plyta_sklep' in 'field list' [ INSERT INTO `konfiguracja` (`id_plyta`, `id_plyta_sklep`, `id_procesor`, `id_procesor_sklep`, `id_pamiec`, `id_karta_graf`, `id_karta_graf_sklep`, `id_dysk`, `id_dysk_sklep`, `id_obudowa`, `id_obudowa_sklep`, `id_zasilacz`, `id_naped`, `id_karta_muz`, `id_klawiatura`, `id_mysz`) VALUES ('7378', '9075', '7651', '4793', '7730', '8416', '4793', '8043', '14775', '8141', '392', '8285', '8068', '8366', '7754', '7885') ] ~ MODPATH\database\classes\kohana\database\mysql.php [ 194 ]
+--
+#0 C:\xampp\htdocs\kohana\modules\database\classes\kohana\database\query.php(245): Kohana_Database_MySQL->query(2, 'INSERT INTO `ko...', false, Array)
+#1 C:\xampp\htdocs\kohana\application\classes\model\form.php(65): Kohana_Database_Query->execute()
+#2 C:\xampp\htdocs\kohana\application\classes\controller\form.php(24): Model_Form->add_produkt(Array)
+#3 [internal function]: Controller_Form->action_index()
+#4 C:\xampp\htdocs\kohana\system\classes\kohana\request\client\internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 C:\xampp\htdocs\kohana\system\classes\kohana\request\client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 C:\xampp\htdocs\kohana\system\classes\kohana\request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-04-24 09:49:44 --- ERROR: Database_Exception [ 1054 ]: Unknown column 'id_procesor_sklep' in 'field list' [ INSERT INTO `konfiguracja` (`id_plyta`, `id_procesor`, `id_procesor_sklep`, `id_pamiec`, `id_karta_graf`, `id_dysk`, `id_obudowa`, `id_zasilacz`, `id_naped`, `id_karta_muz`, `id_klawiatura`, `id_mysz`) VALUES ('7282', '7646', '15157', '7716', '8413', '8041', '8138', '8285', '8068', '8366', '7754', '7885') ] ~ MODPATH\database\classes\kohana\database\mysql.php [ 194 ]
+2012-04-24 09:49:44 --- STRACE: Database_Exception [ 1054 ]: Unknown column 'id_procesor_sklep' in 'field list' [ INSERT INTO `konfiguracja` (`id_plyta`, `id_procesor`, `id_procesor_sklep`, `id_pamiec`, `id_karta_graf`, `id_dysk`, `id_obudowa`, `id_zasilacz`, `id_naped`, `id_karta_muz`, `id_klawiatura`, `id_mysz`) VALUES ('7282', '7646', '15157', '7716', '8413', '8041', '8138', '8285', '8068', '8366', '7754', '7885') ] ~ MODPATH\database\classes\kohana\database\mysql.php [ 194 ]
+--
+#0 C:\xampp\htdocs\kohana\modules\database\classes\kohana\database\query.php(245): Kohana_Database_MySQL->query(2, 'INSERT INTO `ko...', false, Array)
+#1 C:\xampp\htdocs\kohana\application\classes\model\form.php(65): Kohana_Database_Query->execute()
+#2 C:\xampp\htdocs\kohana\application\classes\controller\form.php(28): Model_Form->add_produkt(Array)
+#3 [internal function]: Controller_Form->action_index()
+#4 C:\xampp\htdocs\kohana\system\classes\kohana\request\client\internal.php(118): ReflectionMethod->invoke(Object(Controller_Form))
+#5 C:\xampp\htdocs\kohana\system\classes\kohana\request\client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 C:\xampp\htdocs\kohana\system\classes\kohana\request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\kohana\index.php(109): Kohana_Request->execute()
+#8 {main}

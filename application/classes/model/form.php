@@ -7,10 +7,10 @@ Class Model_Form extends Model
 		return $model = array('id_plyta' => 'Płyta Główna',
 		'id_procesor' => 'Procesor',
 		'id_pamiec' => 'Pamięć',
-		'id_pamiec2' => 'Pamięć',
+		//'id_pamiec2' => 'Pamięć',
 		'id_karta_graf' => 'Karta graficzna',
 		'id_dysk' => 'Dysk twardy',
-		'id_dysk2' => 'Dysk twardy',
+		//'id_dysk2' => 'Dysk twardy',
 		'id_obudowa' => 'Obudowa',
 		'id_zasilacz' =>'Zasilacz',
 		'id_naped' => 'Napęd',
@@ -23,16 +23,29 @@ Class Model_Form extends Model
 		return $model = array('plyta' => 'Płyta Główna',
 		'procesor' => 'Procesor',
 		'pamiec' => 'Pamięć',
-		'pamiec2' => 'Pamięć',
+		//'pamiec2' => 'Pamięć',
 		'karta_graf' => 'Karta graficzna',
 		'dysk' => 'Dysk twardy',
-		'dysk2' => 'Dysk twardy',
+		//'dysk2' => 'Dysk twardy',
 		'obudowa' => 'Obudowa',
 		'zasilacz' =>'Zasilacz',
 		'naped' => 'Napęd',
 		'karta_muz' => 'Karta muzyczna',
 		'klawiatura' => 'Klawiatura',
 		'mysz' => 'Mysz' );
+	}
+	public function get_shops($id)
+	{
+		$query = DB::query(Database::SELECT, 'SELECT * FROM produkty_sklepy ps INNER JOIN sklepy s ON ps.id_sklep  = s.shop_id WHERE ps.id_produkt IN (SELECT id_nokaut FROM produkty WHERE id = :id)');
+		$query->parameters(array(':id' => $id));
+		return $query->execute()->as_array('id_sklep', 'shop_name');
+	}
+	public function get_cena($id)
+	{
+		$query = DB::query(Database::SELECT, 'SELECT price FROM produkty_sklepy ps INNER JOIN sklepy s ON ps.id_sklep  = s.shop_id WHERE ps.id_produkt IN (SELECT id_nokaut FROM produkty WHERE id = :id) LIMIT 1');
+		$query->parameters(array(':id' => $id));
+		$ret = $query->execute()->as_array();
+		return $ret[0]['price'];
 	}
 	public function get_produkt($co)
 	{

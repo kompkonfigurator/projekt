@@ -6,24 +6,21 @@ class Controller_Form extends Controller_Default {
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');
         $this->template->content = View::factory('form');
-		$this->template->content->plyta = $form->get_produkt('plyta');
-		$this->template->content->procesor = $form->get_produkt('procesor');
-		$this->template->content->pamiec = $form->get_produkt('pamiec');
-		$this->template->content->karta_graf = $form->get_produkt('grafika');
-		$this->template->content->dysk = $form->get_produkt('dysk');
-		$this->template->content->obudowa = $form->get_produkt('obudowa');
-		$this->template->content->zasilacz = $form->get_produkt('zasilacz');
-		$this->template->content->naped = $form->get_produkt('naped');
-		$this->template->content->karta_muz = $form->get_produkt('muzyczna');
-		$this->template->content->mysz = $form->get_produkt('myszka');
-		$this->template->content->klawiatura = $form->get_produkt('klawiatura');
+		$model = $form->return_modelnoid();
+		foreach($model as $key => $val)
+		{
+			$this->template->content->{$key} = $form->get_produkt($key);
+			$keyy = $form->get_produkt($key);
+			reset($keyy);
+			$this->template->content->{$key.'_shop'} = $form->get_shops(key($keyy));
+			$this->template->content->{$key.'_cena'} = $form->get_cena(key($keyy));
+		}
 		$this->template->scripts = array('media/js/skrypt.js');
 		$this->template->content->model = $form->return_modelnoid();
 		if($this->request->post())
 		{
 			if($form->add_produkt($_POST)) $this->request->redirect('/');
 		}
-	
 	}
 	public function action_update() {
 	error_reporting(E_ALL & ~E_NOTICE);
@@ -35,6 +32,7 @@ class Controller_Form extends Controller_Default {
         $this->template->title = __('Formularz');
         $this->template->content = View::factory('form');
 		$konf = $form->get_konf($id);
+		$this->template->content->model = $form->return_modelnoid();
 		//echo Debug::vars($konf);
 		foreach($konf as $key => $val)
 		{
