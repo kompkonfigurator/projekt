@@ -41,8 +41,9 @@
 <br/>
 <br/>
 
-<?= Form::submit('create', 'Zarejestruj'); ?>
+<p><?= Form::submit('create', 'Zarejestruj'); ?></p>
 <?= Form::close(); ?>
 </center>
-<p style="text-align:center">Or <?= HTML::anchor('user/login', 'login'); ?> if you have an account already.</p>
+<br/>
+<p style="text-align:center;color:white;font-weight:bold">Lub <?= HTML::anchor('user/login', 'zaloguj'); ?> jeżeli posiadasz już konto !</p>
 </div>

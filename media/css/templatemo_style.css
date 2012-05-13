@@ -29,6 +29,46 @@ input:focus {
 	box-shadow: 0px 0px 5px #007eff;
 }
 
+p input{
+margin-left:134px;
+width:100px;
+color:#ffb21e;
+font-weight:bold;
+background:#333333;
+
+}
+
+.naglowek{
+
+font-size:32px;
+color:#fb6e26;
+font-weight:bold;
+text-shadow: 0px 0px 2px yellow;
+
+}
+
+p a{
+
+text-decoration:none;
+color:#fb6e26;
+font-weight:bold;
+font-size:15px;
+
+}
+
+.error{
+color:white;
+font-weight:bold;
+}
+
+.message {
+color:red;
+font-size:18px;
+font-weight:bold;	
+
+
+}
+
 
 .pudelko{
 border: 2px solid;
