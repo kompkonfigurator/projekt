@@ -1,4 +1,6 @@
-<div class="pudelko"><center><h3>Rejestracja</h3>
+<div class="pudelko"><center><div class="naglowek">Rejestracja</div>
+<br/>
+<br/>
 <? if ($message) : ?>
 	<h3 class="message">
 		<?= $message; ?>
@@ -38,8 +40,7 @@
 </div>
 <br/>
 <br/>
-<br/>
-<br/>
+
 
 <p><?= Form::submit('create', 'Zarejestruj'); ?></p>
 <?= Form::close(); ?>

@@ -1,24 +1,40 @@
-<h2>Login</h2>
+<div class="pudelko"><center><div class="naglowek">Zaloguj się</div>
+<br/>
+<br/>
+<br/>
 <? if ($message) : ?>
 	<h3 class="message">
 		<?= $message; ?>
 	</h3>
 <? endif; ?>
-
+<br/>
+<br/>
 <?= Form::open('user/login'); ?>
 
-<?= Form::label('username', 'Username'); ?>
+<div class="rejestracja"><?= Form::label('username', 'Podaj nazwę użytkownika : '); ?></div><br/>
 <?= Form::input('username', HTML::chars(Arr::get($_POST, 'username'))); ?>
+<br/>
+<br/>
+<br/>
 
-<?= Form::label('password', 'Password'); ?>
+<div class="rejestracja"><?= Form::label('password', 'Podaj hasło : '); ?></div><br/>
 <?= Form::password('password'); ?>
+<br/>
+<br/>
+<br/>
 
-<?= Form::label('remember', 'Remember Me'); ?>
-<?= Form::checkbox('remember'); ?>
+<div class="rejestracja"><?= Form::label('remember', 'Zapamietaj mnie : '); ?></div><br/>
+	<?= Form::checkbox('remember'); ?>
+	<br/><br/>
 
-<p>(Remember Me keeps you logged in for 2 weeks)</p>
+<p style="text-align:center;color:#05cb24;font-weight:bold;font-size:13px;">Opcja przetrzymuje twoje zalogowanie przez 2 tygodnie!</p>
+<br/>
+<br/>
 
-<?= Form::submit('login', 'Login'); ?>
+<p><?= Form::submit('login', 'Zaloguj'); ?></p>
 <?= Form::close(); ?>
-
-<p>Or <?= HTML::anchor('user/create', 'create a new account'); ?></p>
+</center>
+<br/>
+<br/>
+<p style="text-align:center;color:white;font-weight:bold">Lub <?= HTML::anchor('user/create', 'stwórz nowe konto : '); ?></p>
+</div>
