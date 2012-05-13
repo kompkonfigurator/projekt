@@ -19,14 +19,14 @@ class Controller_Form extends Controller_Default {
 		$this->template->content->model = $form->return_modelnoid();
 		if($this->request->post())
 		{
-			if($form->add_produkt($_POST)) $this->request->redirect('/');
+			if($form->add_produkt($_POST)) $this->request->redirect('/home');
 		}
 	}
 	public function action_update() {
 	error_reporting(E_ALL & ~E_NOTICE);
 		if(!$id = $this->request->param('id'))
 		{
-			$this->request->redirect('/');
+			$this->request->redirect('/home');
 		}
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');
@@ -62,9 +62,9 @@ class Controller_Form extends Controller_Default {
 		$form = Model::factory('form');
 		if(!$id = $this->request->param('id'))
 		{
-			$this->request->redirect('/');
+			$this->request->redirect('/home');
 		}
-		if($form->delete_produkt($id)) $this->request->redirect('/');
+		if($form->delete_produkt($id)) $this->request->redirect('/home');
 	}
 	public function action_show()
 	{
