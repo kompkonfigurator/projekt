@@ -61,5 +61,8 @@
 
 <tr><td colspan="3" align="right">Suma</td><td id="suma" colspan="3" align="left"></td></tr></table>
 
-<?php echo Form::submit(NULL, 'Post') ?>
+<br/>
+<br/>
+
+<div class="sub"><?php echo Form::submit(NULL, 'Zapisz zestaw') ?></div>
 <?php echo Form::close() ?>
