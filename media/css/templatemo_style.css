@@ -209,6 +209,91 @@ h4 {
 }
 
 
+.readmore_white a{
+
+display: block;
+width: 100px;
+height: 22px;
+      
+padding-top: 3px;
+background: url(../assets/templatemo_more_white.gif) no-repeat;
+color: #000000;
+text-decoration: none;
+text-align: center;
+}
+
+.readmore_whit a{
+
+display: block;
+width: 100px;
+height: 22px;
+        margin-top: -25px;
+        margin-left:120px;
+padding-top: 3px;
+background: url(../assets/templatemo_more_white.gif) no-repeat;
+color: #000000;
+text-decoration: none;
+text-align: center;
+}
+
+.readmore_b a{
+
+
+padding-top:6px;
+font-size: 11px;
+text-align: left;
+
+color: #ffb21e;
+display: block;
+width: 100px;
+height: 22px;
+ margin-left:150px;
+
+margin-top:-28px;
+text-decoration: none;
+font-weight:bold;
+
+
+}
+
+
+.readmore_blc a{
+
+margin-top:-28px;
+margin-left:195px;
+padding-top:6px;
+font-size: 11px;
+text-align: left;
+
+color: #ffb21e;
+display: block;
+width: 100px;
+height: 22px;
+font-weight:bold;
+
+
+text-decoration: none;
+
+
+}
+
+.readmore_bl a{
+ 
+display: block;
+width: 100px;
+height: 22px;
+      font-size: 11px;
+     margin-left:100px;
+padding-top: 6px;
+text-align: left;
+
+color: #ffb21e;
+text-decoration: none;
+font-weight:bold;
+}
+
+
+
 #templatemo_container {
 	margin: 0px auto;
 	width: 920px;
@@ -399,12 +484,14 @@ h4 {
 }
 
 .box1{
-	float: left;
-	width: 280px;
-	margin-right: 19px;
-	background: #272727;
+float: left;
+width: 280px;
+       
+margin: 0px;
+        margin-right:12px;
+        margin-bottom: 19px;
+background: #272727;
 }
-
 .box1top {
 	height: 30px;
 	padding-top: 10px;
@@ -543,7 +630,7 @@ h4 {
 
 .plan_column {
 	float: left;
-	width: 150px;
+	width: 350px;
 }
 
 
