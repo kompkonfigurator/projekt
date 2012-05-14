@@ -1,9 +1,12 @@
-<h2>Info for  user "<?= $user->username; ?>"</h2>
-
+<div class="pudelko"><center><div class="naglowek">Użytkownik :  "<?= $user->username; ?>"</div>
+<br/>
+<br/>
 <ul>
-	<li>Email: <?= $user->email; ?></li>
-	<li>Number of logins: <?= $user->logins; ?></li>
-	<li>Last Login: <?= Date::fuzzy_span($user->last_login); ?></li>
+	<div class="rejestracja"><li>Email : <?= $user->email; ?></li></div><br/><br/>
+	<div class="rejestracja"><li>Liczba logowań: <?= $user->logins; ?></li></div><br/><br/>
+	<div class="rejestracja"><li>Ostatnie logowanie: <?= Date::fuzzy_span($user->last_login); ?></li></div><br/><br/>
 </ul>
+</center>
 
-<?= HTML::anchor('user/logout', 'Logout'); ?>
+<p style="text-align:center;"><?= HTML::anchor('user/logout', 'Wyloguj'); ?></p>
+</div>

@@ -26,7 +26,7 @@ class Controller_Form extends Controller_Default {
 	error_reporting(E_ALL & ~E_NOTICE);
 		if(!$id = $this->request->param('id'))
 		{
-			$this->request->redirect('/');
+			$this->request->redirect('/home');
 		}
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');

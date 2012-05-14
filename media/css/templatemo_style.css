@@ -1,9 +1,102 @@
 /*
 CSS Credit: http:/www.templatemo.com/
 */
-/*
-CSS Credit: http:/www.templatemo.com/
-*/
+input {
+	margin:auto;
+	width:250px;
+	padding: 5px;
+	
+	font-size: 15px;
+	text-shadow: 0px 1px 0px #fff;
+	outline: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#bcbcbe), to(#ffffff));
+	background: -moz-linear-gradient(top,  #bcbcbe,  #ffffff);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #717171;
+	input:focus {
+	-webkit-box-shadow: 0px 0px 5px #007eff;
+	-moz-box-shadow: 0px 0px 5px #007eff;
+	box-shadow: 0px 0px 5px #007eff;
+}
+
+}
+
+input:focus {
+	-webkit-box-shadow: 0px 0px 5px #007eff;
+	-moz-box-shadow: 0px 0px 5px #007eff;
+	box-shadow: 0px 0px 5px #007eff;
+}
+
+p input{
+margin-left:134px;
+width:100px;
+color:#ffb21e;
+font-weight:bold;
+background:#333333;
+
+}
+
+.naglowek{
+
+font-size:32px;
+color:#fb6e26;
+font-weight:bold;
+text-shadow: 0px 0px 2px yellow;
+
+}
+
+p a{
+
+text-decoration:none;
+color:#fb6e26;
+font-weight:bold;
+font-size:15px;
+
+}
+
+.error{
+color:white;
+font-weight:bold;
+}
+
+.message {
+color:red;
+font-size:18px;
+font-weight:bold;	
+
+
+}
+
+
+.pudelko{
+border: 2px solid;
+padding:50px;
+padding-top:30px;
+padding-bottom:30px;
+margin-right:200px;
+margin-left:200px;
+
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+background:url(../img/aa.jpg);
+
+
+
+}
+
+.rejestracja{
+font-size:15px;
+color:yellow;
+font-weight:bold;
+text-shadow: 0px -11px 10px #C60, 0px -3px 9px #FF0;
+
+
+}
+
+
 #community { width:900px; float:left; }
 
 #community h2 { font:normal bold 18px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color:navy; }
@@ -22,7 +115,7 @@ CSS Credit: http:/www.templatemo.com/
 #community li a#forum { background-image: url('http://icons.iconarchive.com/icons/media-design/hydropro-v2/48/My-Computer-icon.png'); }
 #community li a#irc { background-image: url('http://icons.iconarchive.com/icons/kyo-tux/aeon/48/Apps-Resource-Hacker-icon.png'); }
 #community li a#stackoverflow { background-image: url('http://icons.iconarchive.com/icons/webiconset/application/48/Register-icon.png'); }
-#community li a#ohloh { background-image: url('http://icons.iconarchive.com/icons/gakuseisean/ivista-2/48/Alarm-Padlock-icon.png'); }
+#community li a#ohloh { background-image: url('http://icons.iconarchive.com/icons/visualpharm/office-space/48/user-icon.png'); }
 
 #community li>a:link,
 #community li>a:visited { color:#254241; display:block; }
@@ -34,6 +127,7 @@ CSS Credit: http:/www.templatemo.com/
 #community a:hover h3,
 #community a:active h3,
 #community a:focus h3 { color:#578b14; text-decoration:underline; }
+
 body {
 	margin:0;
 	padding:0;
