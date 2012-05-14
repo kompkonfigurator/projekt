@@ -57,9 +57,7 @@
             <div class="menuleft"></div>
                 <ul>
                     <li><?php echo html::anchor('/', '<img src="http://icons.iconarchive.com/icons/artua/mac/16/Home-icon.png" alt="comp" border="0"/> - Strona Główna'); ?></li>
-                    <li><?php echo html::anchor('/form', '<img src="http://icons.iconarchive.com/icons/icons-land/vista-hardware-devices/16/Home-Server-icon.png" alt="comp" border="0"/> - Formularz'); ?></li>
-                    <li><?php echo html::anchor('/user/create', '<img src="http://icons.iconarchive.com/icons/webiconset/application/16/Register-icon.png" alt="comp" border="0"/> - Rejestracja'); ?></li>
-                    <li><?php echo html::anchor('/user/login', '<img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/16/Alarm-Padlock-icon.png" alt="comp" border="0"/> - Logowanie'); ?></li>
+                   
 
                 </ul>
             <div class="menuright"></div>    	

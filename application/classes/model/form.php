@@ -47,6 +47,14 @@ Class Model_Form extends Model
 		$ret = $query->execute()->as_array();
 		return $ret[0]['price'];
 	}
+	public function get_cena_shop($id, $idshop)
+	{
+		$query = DB::query(Database::SELECT, 'SELECT price FROM produkty_sklepy ps INNER JOIN sklepy s ON ps.id_sklep  = s.shop_id WHERE ps.id_produkt IN (SELECT id_nokaut FROM produkty WHERE id = :id) AND shop_id = :shop LIMIT 1');
+		$query->parameters(array(':id' => $id,
+									':shop' => $idshop));
+		$ret = $query->execute()->as_array();
+		return $ret[0]['price'];
+	}
 	public function get_produkt($co)
 	{
 		return DB::select()->from('produkty')->where('co', '=', $co)->execute()->as_array('id', 'name');
