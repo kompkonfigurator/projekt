@@ -15,7 +15,7 @@ class Controller_Form extends Controller_Default {
 			$this->template->content->{$key.'_shop'} = $form->get_shops(key($keyy));
 			$this->template->content->{$key.'_cena'} = $form->get_cena(key($keyy));
 		}
-		$this->template->scripts = array('media/js/calculate.js', 'media/js/skrypt.js');
+		$this->template->scripts = array('media/js/skrypt.js');
 		$this->template->content->model = $form->return_modelnoid();
 		if($this->request->post())
 		{
@@ -31,22 +31,18 @@ class Controller_Form extends Controller_Default {
 		$form = Model::factory('form');
         $this->template->title = __('Formularz');
         $this->template->content = View::factory('form');
-		$this->template->scripts = array('media/js/calculate.js', 'media/js/skrypt.js');
 		$konf = $form->get_konf($id);
 		$this->template->content->model = $form->return_modelnoid();
 		//echo Debug::vars($konf);
 		foreach($konf as $key => $val)
 		{
-			if(preg_match('/id_[a-zA-Z0-9]*/', $key) && !empty($val) && $val!='NULL')
+			if(preg_match('/id_.*/', $key) && !empty($val) && $val!='NULL')
 			{
-				$key2 = $key;
 				$key = str_replace('id_', '', $key);
+				
 				$this->template->content->{$key} = $form->get_produkt($key);
 				$this->template->content->{$key.'_selected'} = array_keys($form->get_produktById($val));
 				$this->template->content->{$key.'_selected'} = $this->template->content->{$key.'_selected'}[0];
-				$this->template->content->{$key.'_shop'} = $form->get_shops($this->template->content->{$key.'_selected'});
-				$this->template->content->{$key.'_shop_selected'} = $konf[$key2.'_sklep'];
-				$this->template->content->{$key.'_cena'} = $form->get_cena_shop($this->template->content->{$key.'_selected'}, $konf[$key2.'_sklep']);
 			}
 			else
 			{
