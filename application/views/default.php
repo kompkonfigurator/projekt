@@ -72,9 +72,11 @@
             </div>
     <div class="templatemo_content_bottom"></div>
     
-    	<div id="templatemo_footer">
-		<a href="#">Home</a> | <a href="#">Hosting Features</a> | <a href="#">Help Center</a> | <a href="#">Resellers</a> | <a href="#"> Our Company</a> | <a href="#">Contact Us</a><br />
-        Copyright © 2048 <a href="#"><b>Your Company Name</b></a> | <a href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> by <a href="http://www.templatemo.com" target="_blank"><b>templatemo.com</b></a></div>
+<div id="templatemo_footer">
+		<a href="/kohana/">Strona Główna</a> | <a href="/kohana/map">Mapa Serwisu</a> | <a href="#">O nas</a><br />
+  
+    
+</div>
    
     
 </div>
