@@ -607,7 +607,7 @@ background: #272727;
 	background: #ffffff;
 	margin-top:10px;
 	padding-top:10px;
-    height: 10px;
+    height: 30px;
    
 	
 }
@@ -630,7 +630,7 @@ background: #272727;
 
 .plan_column {
 	float: left;
-	width: 350px;
+	width: 500px;
 }
 
 

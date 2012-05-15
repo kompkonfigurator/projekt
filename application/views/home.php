@@ -6,7 +6,7 @@
 
           </div>
                 
-                <div class="body"><div class="readmore_bl"></div><div class="readmore_b"></div><div class="readmore_blc"></div>
+                <div class="body"><div class="readmore_bl"><?php echo HTML::anchor('/form/update/'. $konf[$i]['id'], 'Edytuj'); ?></div><div class="readmore_b">  <?php echo HTML::anchor('/form/delete/'. $konf[$i]['id'], 'Usuń'); ?></div><div class="readmore_blc">	<?php echo HTML::anchor('/form/show/'. $konf[$i]['id'], 'Pokaż'); ?></div>
 
 <br/>
 		Najniższa proponowana cena :<br/> <br/>
@@ -22,9 +22,9 @@
 
  
                         </ul>
-						<?php echo HTML::anchor('/form/update/'. $konf[$i]['id'], 'Edytuj'); ?>
-                        <?php echo HTML::anchor('/form/delete/'. $konf[$i]['id'], 'Usuń'); ?>
-						<?php echo HTML::anchor('/form/show/'. $konf[$i]['id'], 'Pokaż'); ?>
+						
+                      
+					
                
 				</div>
                 <div class="boxbottom">
