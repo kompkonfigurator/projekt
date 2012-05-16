@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -43,7 +43,7 @@
     <div class="templatemo_content_top"></div>
     <div id="templatemo_content">
 	   
-    	<div class="banner">
+    	    	<div class="banner">
         	<h3><?php echo __('Only using our application');?></h3>
             <ul>
                 <li><?php echo __('you can easily');?></li>
@@ -61,9 +61,9 @@
 					
 					<li><?php echo HTML::anchor('/form', __('<img src="http://icons.iconarchive.com/icons/icons-land/vista-hardware-devices/16/Home-Server-icon.png" alt="comp" border="0"/> - Form'), ($top_tab=="form" ? array('class'=>'current') : NULL));?></li>
 					
-					<li><?php echo HTML::anchor('/user/create', __('<img src="http://icons.iconarchive.com/icons/webiconset/application/16/Register-icon.png" alt="comp" border="0"/> - Register'), ($top_tab=="/user/create" ? array('class'=>'current') : NULL));?></li>
+					<li><?php echo HTML::anchor('/user/index', __('<img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/16/Apps-preferences-desktop-user-icon.png" alt="comp" border="0"/> - Account'), ($top_tab=="/user/index" ? array('class'=>'current') : NULL));?></li>
 					
-                 <li><?php echo HTML::anchor('/user/login', __('<img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/16/Alarm-Padlock-icon.png" alt="comp" border="0"/> - Login'), ($top_tab=="/user/login" ? array('class'=>'current') : NULL));?></li>
+                 <li><?php echo HTML::anchor('/user/logout', __('<img src="http://icons.iconarchive.com/icons/fatcow/farm-fresh/16/door-in-icon.png" alt="comp" border="0"/> - Logout'), ($top_tab=="/user/logout" ? array('class'=>'current') : NULL));?></li>
                    
 
 					<li><?php
@@ -82,10 +82,11 @@
             </div>
     <div class="templatemo_content_bottom"></div>
     
-    	<div id="templatemo_footer">
-		<a href="/kohana"><?php echo __('Main page')?></a> | <a href="../"><?php echo __('About')?></a> | <a href="../"><?php echo __('Shops')?></a> | <a href="../"><?php echo __('Contact')?> </a>| <a href="/kohana/newsletter?p=subscribe">Newsletter</a>
-		<br />
-        Copyright © 2012 <a href="#"><b><?php echo __('Configurator')?></b></a> | <a href="" target="_parent">Website Templates</a> by <a href="http://www.templatemo.com" target="_blank"><b>templatemo.com</b></a></div>
+<div id="templatemo_footer">
+		<a href="/kohana"><?php echo __('Main page')?></a> | <a href="/kohana/map"><?php echo __('Map')?></a> | <a href="../"><?php echo __('About')?></a> | <a href="/kohana/newsletter?p=subscribe">Newsletter</a><br /> </div>
+  
+    
+</div>
    
     
 </div>

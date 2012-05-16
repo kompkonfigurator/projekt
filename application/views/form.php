@@ -1,6 +1,6 @@
 ﻿<?php print form::open(); ?>
 <table border="1" cellpadding="0" cellspacing="0">
-<tr><td><select id="sel_sock" name="sel_sock" onchange="select_sock(this.value);">
+<tr><!--<td><select id="sel_sock" name="sel_sock" onchange="select_sock(this.value);">
 <option value="nie"></option>
 <option value="Socket 775">Socket 775</option>
 <option value="Socket AM2">Socket AM2</option>
@@ -9,23 +9,24 @@
 <option value="Socket 1156">Socket 1156</option>
 <option value="Socket 1366">Socket 1366</option>
 </select>
-</td>
+</td>-->
 <?php
 	$i=0;
 	foreach($model as $key => $val) :
-		if($i++!=0) echo '<tr><td></td>';
+		//if($i++!=0)
+		echo '<tr>';
 		if($key=='plyta' || $key =='procesor' || $key == 'pamiec') : 
-			$style = array('style' => 'width:300px', 'class' => 'sock_depend listen');
+			$style = array('style' => 'width:400px', 'class' => 'sock_depend listen');
 			$styleSklep = array('style' => 'width:200px', 'class' => 'sock_depend shop');
 		else :
-			$style = array('style' => 'width:300px', 'class' => 'listen');
+			$style = array('style' => 'width:400px', 'class' => 'listen');
 			$styleSklep = array('style' => 'width:200px', 'class' => 'shop');
 		endif;
 		$name = 'id_'.$key.'_sklep';
 		$name2 = 'id_'.$key;
 		$cena = ${$key.'_cena'};
 		echo '<td>' . $val .'</td><td>'. form::select($name2, ${$key}, ${$key.'_selected'}, $style).'</td>';
-		echo '<td id="id_'.$key.'_cena">'. $cena .'</td><td>'.form::select($name, ${$key.'_shop'}, NULL, $styleSklep, NULL, 'standard');
+		echo '<td id="id_'.$key.'_cena" class="cena">'. $cena .'</td><td>'.form::select($name, ${$key.'_shop'}, ${$key.'_shop_selected'}, $styleSklep, NULL, 'standard');
 		echo '</td></tr>';
 	endforeach;
 ?>
@@ -60,5 +61,8 @@
 
 <tr><td colspan="3" align="right">Suma</td><td id="suma" colspan="3" align="left"></td></tr></table>
 
-<?php echo Form::submit(NULL, 'Post') ?>
+<br/>
+<br/>
+
+<div class="sub"><?php echo Form::submit(NULL, __('Save')) ?></div>
 <?php echo Form::close() ?>

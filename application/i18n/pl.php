@@ -1,3 +1,7 @@
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=windows-1250" />
+</head>
+
 <?php defined('SYSPATH') or die('No direct script access.');
  
 return array(
@@ -12,6 +16,10 @@ return array(
 	'<img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/16/Alarm-Padlock-icon.png" alt="comp" border="0"/> - Login' =>
 	'<img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/16/Alarm-Padlock-icon.png" alt="comp" border="0"/> - Logowanie',
 	
+	'<img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/16/Apps-preferences-desktop-user-icon.png" alt="comp" border="0"/> - Account' => '<img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/16/Apps-preferences-desktop-user-icon.png" alt="comp" border="0"/> - Konto',
+
+'<img src="http://icons.iconarchive.com/icons/fatcow/farm-fresh/16/door-in-icon.png" alt="comp" border="0"/> - Logout' => '<img src="http://icons.iconarchive.com/icons/fatcow/farm-fresh/16/door-in-icon.png" alt="comp" border="0"/> - Wyloguj',
+	
 	'Only using our application' => 'Tylko dzieki naszej aplikacji',
 	'you can easily' => 'w bardzo latwy sposob',
 	'create your own personal computer' => 'zlozysz swoj wymarzony komputer',
@@ -20,12 +28,15 @@ return array(
 	'About' => 'O nas',
 	'Shops' => 'Sklepy',
 	'Contact' => 'Kontakt',
-	'Main page' => 'Start',
+	'Main page' => 'Strona glowna',
 	'Config' => 'Konfig',
-	'Create a New User' => 'Nowy uzytkownik',
+	'create new account' => 'zaloz nowe konto',
 	'Email Address' => 'Adres email',
 	'Username' => 'Uzytkownik',
+	'Settings' => 'Ustawienia konta',
+	'Map' => 'Mapa serwisu',
 	'Password' => 'Haslo',
+	'Retype password' => 'Powtorz haslo',
 	'Confirm Password' => 'Potwierdz haslo',
 	'Create User' => 'Wyslij',
 	' if you have an account already.' => ' jezeli posiadasz juz konto',
@@ -37,7 +48,8 @@ return array(
 	'Search' => 'Szukaj',
 	'Fill the fields' => 'Wypelnij pola',
 	'Register' => 'Zarejestruj',
-	'Remember Me' => 'Zapamietaj',
+	'Registration' => 'Rejestracja',
+	'Remember me' => 'Zapamietaj logowanie',
 	'Remember Me keeps you logged in for 2 weeks' => 'Twoje dane logowania beda zapisane przez 14 dni',
 	'create a new account' => 'stworz nowe konto',
 	'or' => 'lub',
@@ -62,11 +74,13 @@ return array(
 	'Keyboard' => 'Klawiatura',
 	'Mouse' => 'Mysz',
 	'There were errors, please see form below.' => 'Pojawil sie blad, prosze sprawdzic formularz.',
+	'User is not logged in' => 'Uzytkownik nie zalogowany',
 	'Message was sent' => 'Wiadomosc wyslana',
 	'You must provide a username.' => 'Prosze podac uzytkownika',
 	'The username must be at least :param2 characters long.' => 'Pseudonim musi miec co najmniej :param2 znaki.',
 	'The username must be less than :param2 characters long.' => 'Nazwa moze miec maksymalnie :param2 znakow.',
 	'This username is already in use.' => 'Wybrany pseudonim jest zajety.',
+	'Form' => 'Formularz',
 	'You must enter an email address' => 'Prosze podac adres email',
 	'This email is too short, it must be at least :param2 characters long' => 'Adres email musi miec conajmniej :param2 znakow',
 	'This email is too long, it cannot exceed :param2 characters' => 'Adres email jest za dlugi, maksymalna dlugosc to :param2 znaki',
@@ -74,12 +88,17 @@ return array(
 	'This email address is already in use.' => 'Ten adres email jest juz zarejestrowany',
 	'Please choose a password' => 'Prosze podac haslo.',
 	'The password fields did not match.' => 'Podane hasla sie roznia',
-	
-	
-	
-	
-	
-	
+	'Save' => 'Zapisz zestaw',
+	'Prepared sets' => 'Gotowe zestawy',
+	'All parts' => 'Wszystkie czesci',
+	'Here you will find ready computer sets prepared by other users' => 'Tutaj znajdziesz gotowe zestawy przygotowane przez innych uzytkownikow.',
+	'Here you may create your own personal computer using special form' => 'Tutaj za pomoca gotowego formularza mozesz stworzyc swoj zestaw',
+	'You may create your own account here' => 'Tutaj mozesz stworzyc nowe konto uzytkownika',
+	'You may log in here' => 'Tutaj mozesz sie zalogowac',
+	'Log in' => 'Zaloguj',
+	'log in' => 'zaloguj',
+	'Login failed' => 'Logowanie nieudane',
+	'There were errors, please see form below.' => 'Wystapily bledy, prosze poprawic formularz',
 	
 	
 	)

@@ -12,15 +12,15 @@ Class Model_Form extends Model
 		'id_dysk' => __('HDD'),
 		//'id_dysk2' => 'Dysk twardy',
 		'id_obudowa' => __('Cover'),
-		'id_zasilacz' => __('Power supply unit'),
+		'id_zasilacz' => __('Power supply'),
 		'id_naped' => __('ODD'),
-		'id_karta_muz' => __('Sound card'),
+		'id_karta_muz' => __('Soud card'),
 		'id_klawiatura' => __('Keyboard'),
-		'id_mysz' => __('Mouse'));
+		'id_mysz' => __('Mouse') );
 	}
 	public function return_modelnoid()
 	{
-		return $model = array('plyta' => 'Płyta Główna',
+		return $model = array('plyta' => __('Motherboard'),
 		'procesor' => __('Processor'),
 		'pamiec' => __('Memory'),
 		//'pamiec2' => 'Pamięć',
@@ -28,11 +28,11 @@ Class Model_Form extends Model
 		'dysk' => __('HDD'),
 		//'dysk2' => 'Dysk twardy',
 		'obudowa' => __('Cover'),
-		'zasilacz' => __('Power supply unit'),
+		'zasilacz' => __('Power supply'),
 		'naped' => __('ODD'),
 		'karta_muz' => __('Sound card'),
-		'klawiatura' => __('Keyboard'),
-		'mysz' => __('Mouse'));
+		'klawiatura' => __('Keybiard'),
+		'mysz' => __('Mouse') );
 	}
 	public function get_shops($id)
 	{
@@ -44,6 +44,14 @@ Class Model_Form extends Model
 	{
 		$query = DB::query(Database::SELECT, 'SELECT price FROM produkty_sklepy ps INNER JOIN sklepy s ON ps.id_sklep  = s.shop_id WHERE ps.id_produkt IN (SELECT id_nokaut FROM produkty WHERE id = :id) LIMIT 1');
 		$query->parameters(array(':id' => $id));
+		$ret = $query->execute()->as_array();
+		return $ret[0]['price'];
+	}
+	public function get_cena_shop($id, $idshop)
+	{
+		$query = DB::query(Database::SELECT, 'SELECT price FROM produkty_sklepy ps INNER JOIN sklepy s ON ps.id_sklep  = s.shop_id WHERE ps.id_produkt IN (SELECT id_nokaut FROM produkty WHERE id = :id) AND shop_id = :shop LIMIT 1');
+		$query->parameters(array(':id' => $id,
+									':shop' => $idshop));
 		$ret = $query->execute()->as_array();
 		return $ret[0]['price'];
 	}

@@ -1,3 +1,7 @@
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />
+</head>
+
 <div id="templatemo_boxarea">
    <?php for($i=0; $i<sizeof($konf); $i++) : ?>
         <div class="box1">
@@ -6,7 +10,7 @@
 
           </div>
                 
-                <div class="body"><div class="readmore_bl"></div><div class="readmore_b"></div><div class="readmore_blc"></div>
+                <div class="body"><div class="readmore_bl"><?php echo HTML::anchor('/form/update/'. $konf[$i]['id'], 'Edytuj'); ?></div><div class="readmore_b">  <?php echo HTML::anchor('/form/delete/'. $konf[$i]['id'], 'Usuń'); ?></div><div class="readmore_blc">	<?php echo HTML::anchor('/form/show/'. $konf[$i]['id'], 'Pokaż'); ?></div>
 
 <br/>
 		<?php echo __('Lowest prices proposed')?> :<br/> <br/>
@@ -22,9 +26,9 @@
 
  
                         </ul>
-						<?php echo HTML::anchor('/form/update/'. $konf[$i]['id'], __('Edit')); ?>
-                        <?php echo HTML::anchor('/form/delete/'. $konf[$i]['id'], __('Delete')); ?>
-						<?php echo HTML::anchor('/form/show/'. $konf[$i]['id'], __('Show')); ?>
+						
+                      
+					
                
 				</div>
                 <div class="boxbottom">

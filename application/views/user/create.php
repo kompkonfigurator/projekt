@@ -1,38 +1,50 @@
-<h2><?php echo __('Create a New User')?></h2>
+<div class="pudelko"><center><div class="naglowek">Rejestracja</div>
+<br/>
+<br/>
 <? if ($message) : ?>
 	<h3 class="message">
 		<?= $message; ?>
 	</h3>
 <? endif; ?>
-
+<br/>
+<br/>
 <?= Form::open('user/create'); ?>
 
-<?= Form::label('username', __('Username')); ?>
-<?= Form::input('username', HTML::chars(Arr::get($_POST, 'username'))); ?>
+<div class="rejestracja"><?= Form::label('username', __('Username')); ?></div> <br/>
+<div class="inputy"><?= Form::input('username', HTML::chars(Arr::get($_POST, 'username'))); ?></div>
 <div class="error">
 	<?= Arr::get($errors, 'username'); ?>
 </div>
-
-<?php echo __('Email Address')?>
-
+<br/>
+<br/>
+<div class="rejestracja"><?= Form::label('email', __('Email Address')); ?></div> <br/>
 <?= Form::input('email', HTML::chars(Arr::get($_POST, 'email'))); ?>
 <div class="error">
 	<?= Arr::get($errors, 'email'); ?>
 </div>
+<br/>
+<br/>
 
-<?= Form::label('password', __('Password')); ?>
+<div class="rejestracja"><?= Form::label('password', __('Password')); ?></div> <br/>
 <?= Form::password('password'); ?>
 <div class="error">
 	<?= Arr::path($errors, '_external.password'); ?>
 </div>
+<br/>
+<br/>
 
-<?= Form::label('password_confirm', __('Confirm Password')); ?>
+<div class="rejestracja"><?= Form::label('password_confirm', __('Retype password')); ?></div> <br/>
 <?= Form::password('password_confirm'); ?>
 <div class="error">
 	<?= Arr::path($errors, '_external.password_confirm'); ?>
 </div>
+<br/>
+<br/>
 
-<?= Form::submit('create', __('Create User')); ?>
+
+<p><?= Form::submit('create', 'Zarejestruj'); ?></p>
 <?= Form::close(); ?>
-
-<p><?= HTML::anchor('user/login', __('login')); echo __(' if you have an account already.')?></p>
+</center>
+<br/>
+<p style="text-align:center;color:white;font-weight:bold"><?php echo __('or')?> <?= HTML::anchor('user/login', __('log in')); echo __(' if you have an account already.') ?></p>
+</div>

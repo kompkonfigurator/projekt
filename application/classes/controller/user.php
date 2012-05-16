@@ -46,7 +46,7 @@ class Controller_User extends Controller_Default {
 			} catch (ORM_Validation_Exception $e) {
 				
 				// Set failure message
-				$message = __('There were errors, please see form below.');
+				$message = _('There were errors, please see form below.');
 				
 				// Set errors using custom messages
 				$errors = $e->errors('models');
@@ -72,7 +72,7 @@ class Controller_User extends Controller_Default {
 			} 
 			else 
 			{
-				$message = 'Login failed';
+				$message = __('Login failed');
 			}
 		}
 	}
