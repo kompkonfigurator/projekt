@@ -1,0 +1,1 @@
+Vous pouvez ajouter ici plusieurs emails &agrave; vos listes.  Les attributs doivent se trouver dans la premi&egrave;re ligne du fichier d&rsquo;origine.  Si les attributs n&rsquo;existent pas dans votre base, ils seront cr&eacute;&eacute;s sous la forme d&rsquo;attributs "champ texte" (textline).

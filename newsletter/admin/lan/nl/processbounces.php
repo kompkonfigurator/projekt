@@ -1,0 +1,56 @@
+<?php
+$lan = array(
+  "This page can only be called from the commandline" => "Deze pagina is enkel toegankelijk via de commandline",
+  "Bounce processing error" => "Bounce Verwerkings fout",
+  "Bounce Processing info" => "Bounce Verwerkings info",
+  "error" => "fout",
+  "info" => "info",
+  "system message bounced, user marked unconfirmed" => "systeem bericht bounced, gebruiker als onbevestigd gemarkeerd",
+  "Bounced system message" => "Bounced systeem bericht",
+  "User marked unconfirmed" => "Gebruiker als onbevestigd gemarkeerd",
+  "View Bounce" => "Bekijk Bounce",
+  "Cannot create POP3 connection to" => "Kan geen POP3 verbinding maken met",
+  "Cannot open mailbox file" => "Kan mailbox bestand niet openen",
+  "bounces to fetch from the mailbox" => "bounces te ontvangen van de mailbox",
+  "Please do not interrupt this process" => "Verstoor deze verwerking aub niet",
+  "bounces to process" => "bounces naar verwerking",
+  "Processing first" => "Verwerken van eerste",
+  "bounces" => "bounces",
+  "Running in test mode, not deleting messages from mailbox" => "Loopt in test mode, geen berichten worden verwijdert uit de mailbox",
+  "Processed messages will be deleted from mailbox" => "Verwerkte berichten zullen worden verwijdert uit de mailbox",
+  "Deleting message" => "Varwijderen van bericht",
+  "Closing mailbox, and purging messages" => "Sluiten van mailbox en zuiveren van de berichten",
+  "IMAP is not included in your PHP installation, cannot continue" => "IMAP is niet ingesloten in jou PHP installatie, kan niet verder gaan",
+  "Check out" => "Raadpleeg",// or 'go look', 'consult', etc.
+  "Bounce mechanism not properly configured" => "Bounce mechanisme niet goed geconfigureerd",
+  "bounce_protocol not supported" => "bounce_protocol niet ondersteund",
+  "Identifying consecutive bounces" => "Identificeren van opeenvolgende bounces",
+  "Nothing to do" => "Niets te doen",
+  "Process Killed by other process" => "Verwerking gestopt door een andere verwerking",
+// 3 lines below = one sentence
+  "User" => "Gebruiker",
+  "has consecutive bounces" => "heeft opeenvolgende bounces",
+  "over treshold, user marked unconfirmed" => "over treshold, gebruiker onbevestigd gemarkeerd",
+  "Auto Unsubscribed" => "Auto Uitschrijven",
+// 2 lines below = one sentence
+  "User auto unsubscribed for" => "Gebruiker is automatisch uitgeschreven voor",
+  "consecutive bounces" => "opeenvolgende bounces",
+// 3 lines below = one sentence
+  "Identifying consecutive bounces" => "Identificeren van opeenvolgende bounces",
+  "of" => "van",
+  "users processed" => "gebruikers verwerkt",
+  'processing first' => 'verwerken van eerste',
+  'Report:' => 'Rapport:',
+  'Below are users who have been marked unconfirmed. The number in [] is their userid, the number in () is the number of consecutive bounces' => 'Hier onder zijn de gebruikers die onbevestigd zijn gemarkeerd. Het nummer tussen [] is hun gebruikersid, het nummer tussen () is het aantal opeenvolgende bounces',
+
+  ## new in 2.9.5
+  'Processing bounces based on active bounce rules' => 'Verwerken van bounces gebaseerd op actieve bounce regels',
+  'Auto Blacklisted' => 'Auto Blacklisted',
+  'User auto blacklisted for' => 'Gebruiker auto blacklisted voor',
+  'bounce rule' => 'bounce regel',
+  'system message bounced, but unknown user' => 'systeem bericht bounced, maar ongekende gebruiker',
+  'bounces processed by advanced processing' => 'bounces verwerkt door geavanceerd verwerken',
+  'bounces were not matched by advanced processing rules' => 'bounces waren niet overeenkomend voor de geavanceerde verwerkings regels',
+  'Report of advanced bounce processing:' => 'Rapport van geavanceerde bounce verwerking:',
+);
+?>

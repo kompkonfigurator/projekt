@@ -1,0 +1,56 @@
+<?php
+$lan = array(
+  "This page can only be called from the commandline" => "Denne side kan kun kaldes fra kommandolinjen",
+  "Bounce processing error" => "Bounce behandlings fejl",
+  "Bounce Processing info" => "Bounce behandlings info",
+  "error" => "fejl",
+  "info" => "info",
+  "system message bounced, user marked unconfirmed" => "system besked bounced, bruger markeret ikke-bekr&aelig;ftet",
+  "Bounced system message" => "Bounced system besked",
+  "User marked unconfirmed" => "Bruger markeret ikke-bekr&aelig;ftet",
+  "View Bounce" => "Se bounce",
+  "Cannot create POP3 connection to" => "Kan ikke oprette POP3 forbindelse til",
+  "Cannot open mailbox file" => "Kan ikke &aring;bne mailboks fil",
+  "bounces to fetch from the mailbox" => "bounces at hente fra mailboks",
+  "Please do not interrupt this process" => "Undlad at afbryde denne proces",
+  "bounces to process" => "bounces at behandle",
+  "Processing first" => "Behandler f&oslash;rst",
+  "bounces" => "bounces",
+  "Running in test mode, not deleting messages from mailbox" => "Test mode k&oslash;rsel sletter ikke beskeder i mailboksen",
+  "Processed messages will be deleted from mailbox" => "Behandlede beskeder vil blive slettet i mailboksen",
+  "Deleting message" => "Sletter besked",
+  "Closing mailbox, and purging messages" => "Lukker mailboks, og t&oslash;mmer beskeder",
+  "IMAP is not included in your PHP installation, cannot continue" => "IMAP er ikke inkluderet i din PHP installation, kan ikke forts&aelig;tte",
+  "Check out" => "Unders&oslash;g",// or 'go look', 'consult', etc.
+  "Bounce mechanism not properly configured" => "Bounce mekanisme er ikke opsat korrekt",
+  "bounce_protocol not supported" => "bounce_protocol ikke underst&oslash;ttet",
+  "Identifying consecutive bounces" => "Identificerer efterf&oslash;lgende bounces",
+  "Nothing to do" => "Intet at lave",
+  "Process Killed by other process" => "Handling stoppet af en anden proces",
+// 3 lines below = one sentence
+  "User" => "Bruger",
+  "has consecutive bounces" => "har efterf&oslash;lgende bounces",
+  "over threshold, user marked unconfirmed" => "over gr&aelig;nse, bruger markeret ikke-bekr&aelig;ftet",
+  "Auto Unsubscribed" => "Auto frameldt",
+// 2 lines below = one sentence
+  "User auto unsubscribed for" => "Bruger auto frameldt for",
+  "consecutive bounces" => "efterf&oslash;lgende bounces",
+// 3 lines below = one sentence
+  "Identifying consecutive bounces" => "Identificerer efterf&oslash;lgende bounces",
+  "of" => "af",
+  "users processed" => "brugere behandlet",
+  'processing first' => 'behandler f&oslash;rst',
+  'Report:' => 'Rapport:',
+  'Below are users who have been marked unconfirmed. The number in [] is their userid, the number in () is the number of consecutive bounces' => 'Nedenfor ses brugere markeret som ikke-bekr&aelig;ftede. Tallet i [] er deres brugerid, tallet i () er antallet af efterf&oslash;lgende bounces',
+  
+  ## new in 2.9.5
+  'Processing bounces based on active bounce rules' => 'Behandler bounces baseret p&aring; aktive bounce regler',
+  'Auto Blacklisted' => 'Auto udelukket',
+  'User auto blacklisted for' => 'Bruger auto udelukket for',
+  'bounce rule' => 'bounce regel',
+  'system message bounced, but unknown user' => 'system besked bounced, men ukendt bruger',
+  'bounces processed by advanced processing' => 'bounces behandlet efter avanceret behandling',
+  'bounces were not matched by advanced processing rules' => 'bounces blev ikke matchet efter avancerede behandlings regler',
+  'Report of advanced bounce processing:' => 'Rapport over avanceret bounce behandling:',
+);
+?>

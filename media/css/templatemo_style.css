@@ -2,177 +2,6 @@
 CSS Credit: http:/www.templatemo.com/
 */
 
-.csc-sitemap a{
-text-decoration:none;
-display:block;
-text-align:center;
- padding-left: 10px; /* The padding is just there to move the h1 element to the center of the div */
-  padding-top: 17px;
-  font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  color: #46BAD5;
-  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
-
-
-}
-
-.text2{
- font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
-  font-size: 40px;
-  color: #FFFFFF;
-  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
-
-}
-
-.pudelko2{
-border: 2px solid;
-padding:50px;
-padding-top:100px;
-padding-bottom:100px;
-margin-right:200px;
-margin-left:200px;
-
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
-border-radius: 20px;
-background:url(../img/bb.png);
-background-size:100%;
-
-
-
-}
-input {
-	margin:auto;
-	width:250px;
-	padding: 5px;
-	
-	font-size: 15px;
-	text-shadow: 0px 1px 0px #fff;
-	outline: none;
-	background: -webkit-gradient(linear, left top, left bottom, from(#bcbcbe), to(#ffffff));
-	background: -moz-linear-gradient(top,  #bcbcbe,  #ffffff);
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	border: 1px solid #717171;
-	input:focus {
-	-webkit-box-shadow: 0px 0px 5px #007eff;
-	-moz-box-shadow: 0px 0px 5px #007eff;
-	box-shadow: 0px 0px 5px #007eff;
-}
-
-}
-
-input:focus {
-	-webkit-box-shadow: 0px 0px 5px #007eff;
-	-moz-box-shadow: 0px 0px 5px #007eff;
-	box-shadow: 0px 0px 5px #007eff;
-}
-
-p input{
-margin-left:134px;
-width:100px;
-color:#ffb21e;
-font-weight:bold;
-background:#333333;
-
-}
-
-.naglowek{
-
-font-size:32px;
-color:#fb6e26;
-font-weight:bold;
-text-shadow: 0px 0px 2px yellow;
-
-}
-
-p a{
-
-text-decoration:none;
-color:#fb6e26;
-font-weight:bold;
-font-size:15px;
-
-}
-
-.sub input{
-width:150px;
-
-}
-
-.error{
-color:white;
-font-weight:bold;
-}
-
-.message {
-color:red;
-font-size:18px;
-font-weight:bold;	
-
-
-}
-
-
-.pudelko{
-border: 2px solid;
-padding:50px;
-padding-top:30px;
-padding-bottom:30px;
-margin-right:200px;
-margin-left:200px;
-
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
-border-radius: 20px;
-background:url(../img/aa.jpg);
-
-
-
-}
-
-.rejestracja{
-font-size:15px;
-color:yellow;
-font-weight:bold;
-text-shadow: 0px -11px 10px #C60, 0px -3px 9px #FF0;
-
-
-}
-
-
-#community { width:900px; float:left; }
-
-#community h2 { font:normal bold 18px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color:navy; }
-.box h2 { font-size:18px; background:#e5e3d3; padding:9px 11px; -moz-border-radius:5px 5px 0 0; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px; border-radius:5px 5px 0 0; margin:-15px -10px 0 -10px; margin-bottom:15px; }
-
-#community ul { margin:0; }
-#community li { list-style:none; float:left; width:220px; padding:35px; border-bottom:1px solid #dfe9d2; border-right:1px solid #dfe9d2; border-left:1px solid #fbfaf4; border-top:1px solid #fbfaf4; }
-#community li:nth-child(-n+3) { padding-top:0; border-top:0; }
-#community li:nth-child(3n+1) { padding-left:0; border-left:0; }
-#community li:nth-child(3n) { padding-right:0; border-right:0; }
-#community li:nth-child(3n+2) { width:220px; }
-/* #community li:last-child { width:437px; border-bottom:0; border-right:0; padding-right:240px; position:relative; }  RETURN WHEN TWITTER INTEGRATED */
-#community li h3 { text-transform:uppercase; letter-spacing:1px; font:bold normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; padding-bottom:6px; }
-
-#community li a.icon { padding-left: 70px; padding-right: 0px; min-height:100px; display:block; background-position: top left; background-repeat: no-repeat; }
-#community li a#forum { background-image: url('http://icons.iconarchive.com/icons/media-design/hydropro-v2/48/My-Computer-icon.png'); }
-#community li a#irc { background-image: url('http://icons.iconarchive.com/icons/kyo-tux/aeon/48/Apps-Resource-Hacker-icon.png'); }
-#community li a#stackoverflow { background-image: url('http://icons.iconarchive.com/icons/webiconset/application/48/Register-icon.png'); }
-#community li a#ohloh { background-image: url('http://icons.iconarchive.com/icons/visualpharm/office-space/48/user-icon.png'); }
-
-#community li>a:link,
-#community li>a:visited { color:#254241; display:block; }
-#community a:hover,
-#community a:active,
-#community a:focus { color:#254241; text-decoration:none; }
-#community a:link h3,
-#community a:visited h3 { color:#578b14; }
-#community a:hover h3,
-#community a:active h3,
-#community a:focus h3 { color:#578b14; text-decoration:underline; }
-
 body {
 	margin:0;
 	padding:0;
@@ -247,91 +76,6 @@ h4 {
 	text-decoration: none;
 	text-align: center;
 }
-
-
-.readmore_white a{
-
-display: block;
-width: 100px;
-height: 22px;
-      
-padding-top: 3px;
-background: url(../assets/templatemo_more_white.gif) no-repeat;
-color: #000000;
-text-decoration: none;
-text-align: center;
-}
-
-.readmore_whit a{
-
-display: block;
-width: 100px;
-height: 22px;
-        margin-top: -25px;
-        margin-left:120px;
-padding-top: 3px;
-background: url(../assets/templatemo_more_white.gif) no-repeat;
-color: #000000;
-text-decoration: none;
-text-align: center;
-}
-
-.readmore_b a{
-
-
-padding-top:6px;
-font-size: 11px;
-text-align: left;
-
-color: #ffb21e;
-display: block;
-width: 100px;
-height: 22px;
- margin-left:150px;
-
-margin-top:-28px;
-text-decoration: none;
-font-weight:bold;
-
-
-}
-
-
-.readmore_blc a{
-
-margin-top:-28px;
-margin-left:195px;
-padding-top:6px;
-font-size: 11px;
-text-align: left;
-
-color: #ffb21e;
-display: block;
-width: 100px;
-height: 22px;
-font-weight:bold;
-
-
-text-decoration: none;
-
-
-}
-
-.readmore_bl a{
- 
-display: block;
-width: 100px;
-height: 22px;
-      font-size: 11px;
-     margin-left:100px;
-padding-top: 6px;
-text-align: left;
-
-color: #ffb21e;
-text-decoration: none;
-font-weight:bold;
-}
-
 
 
 #templatemo_container {
@@ -524,14 +268,12 @@ font-weight:bold;
 }
 
 .box1{
-float: left;
-width: 280px;
-       
-margin: 0px;
-        margin-right:12px;
-        margin-bottom: 19px;
-background: #272727;
+	float: left;
+	width: 280px;
+	margin-right: 19px;
+	background: #272727;
 }
+
 .box1top {
 	height: 30px;
 	padding-top: 10px;
@@ -640,39 +382,31 @@ background: #272727;
 	background: #333333;	
 	border-bottom: 1px solid #CCCCCC;
 }
+
 .subrow_odd{
 	clear: both;
-	padding: 10px 0px ;
+	padding: 5px 0px;
 	font-size: 12px;
 	background: #ffffff;
-	margin-top:10px;
-	padding-top:10px;
-    height: 30px;
-   
-	
 }
 
 .subrow_even{
 	clear: both;
 	padding: 5px 0px;
 	font-size: 12px;
-	
 }
 
 .name_column {
 	float: left;
-	padding-top:-20px;
 	padding-left: 10px;
-	width: 200px;
+	width: 250px;
 	font-weight: bold;
-	height: 50px;
 }
 
 .plan_column {
 	float: left;
-	width: 500px;
+	width: 150px;
 }
-
 
 .plan_column img{
 	display: block;

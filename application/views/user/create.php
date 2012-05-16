@@ -1,50 +1,38 @@
-<div class="pudelko"><center><div class="naglowek">Rejestracja</div>
-<br/>
-<br/>
+<h2><?php echo __('Create a New User')?></h2>
 <? if ($message) : ?>
 	<h3 class="message">
 		<?= $message; ?>
 	</h3>
 <? endif; ?>
-<br/>
-<br/>
+
 <?= Form::open('user/create'); ?>
 
-<div class="rejestracja"><?= Form::label('username', 'Podaj nazwę użytkownika : '); ?></div> <br/>
-<div class="inputy"><?= Form::input('username', HTML::chars(Arr::get($_POST, 'username'))); ?></div>
+<?= Form::label('username', __('Username')); ?>
+<?= Form::input('username', HTML::chars(Arr::get($_POST, 'username'))); ?>
 <div class="error">
 	<?= Arr::get($errors, 'username'); ?>
 </div>
-<br/>
-<br/>
-<div class="rejestracja"><?= Form::label('email', 'Podaj adress email : '); ?></div> <br/>
+
+<?php echo __('Email Address')?>
+
 <?= Form::input('email', HTML::chars(Arr::get($_POST, 'email'))); ?>
 <div class="error">
 	<?= Arr::get($errors, 'email'); ?>
 </div>
-<br/>
-<br/>
 
-<div class="rejestracja"><?= Form::label('password', 'Podaj hasło : '); ?></div> <br/>
+<?= Form::label('password', __('Password')); ?>
 <?= Form::password('password'); ?>
 <div class="error">
 	<?= Arr::path($errors, '_external.password'); ?>
 </div>
-<br/>
-<br/>
 
-<div class="rejestracja"><?= Form::label('password_confirm', 'Powtórz hasło : '); ?></div> <br/>
+<?= Form::label('password_confirm', __('Confirm Password')); ?>
 <?= Form::password('password_confirm'); ?>
 <div class="error">
 	<?= Arr::path($errors, '_external.password_confirm'); ?>
 </div>
-<br/>
-<br/>
 
-
-<p><?= Form::submit('create', 'Zarejestruj'); ?></p>
+<?= Form::submit('create', __('Create User')); ?>
 <?= Form::close(); ?>
-</center>
-<br/>
-<p style="text-align:center;color:white;font-weight:bold">Lub <?= HTML::anchor('user/login', 'zaloguj'); ?> jeżeli posiadasz już konto !</p>
-</div>
+
+<p><?= HTML::anchor('user/login', __('login')); echo __(' if you have an account already.')?></p>

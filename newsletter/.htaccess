@@ -1,0 +1,13 @@
+
+DirectoryIndex index.php
+
+<FilesMatch "\.(php|inc)$">
+Order allow,deny
+deny from all
+</FilesMatch>
+<FilesMatch "(index.php|dl.php|ut.php|lt.php|download.php)$">
+Order allow,deny
+allow from all
+</FilesMatch>
+php_flag magic_quotes_gpc on
+

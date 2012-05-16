@@ -1,0 +1,33 @@
+<?php
+$lan = array (
+  'No such template' => '沒有這個樣版',
+  'Images stored' => '圖片儲存了',
+  'No images found' => '沒有圖片',
+  'Image' => '圖片',
+  'not full URL' => '不是完整的網址',
+  'does not exist' => '不存在',
+  'Not a full URL:' => '不是完整的網址：',
+  'No Title' => '沒有標題',
+  'Template does not contain the [CONTENT] placeholder' => '樣板內容中沒有 [CONTENT] 標籤',
+  'Template saved' => '樣版儲存了',
+  'Images' => '圖片',
+  'Below is the list of images used in your template. If an image is currently unavailable, please upload it to the database.' => '下面是您在樣版中使用到的圖片，如果任何圖片有問題，請記得重新上傳到資料庫。',
+  'This includes all images, also fully referenced ones, so you may choose not to upload some. If you upload images, they will be included in the emails that use this template.' => '這包含所有圖片，即使是外部的檔案，所以您也許可以不需要上傳部份圖片。如果您上傳了圖片，他們將會包含在使用這個樣板的信件中。',
+  'Image name:' => '圖片名稱：',
+  'times used' => '次使用',
+  'Template does not contain local images' => '樣版不包含本機圖片',
+  'Some errors were found, template NOT saved!' => '發生錯誤，樣版未儲存！',
+  'List of Templates' => '樣版列表',
+  'Title of this template' => '這個樣版的標題',
+  'Content of the template.' => '這個樣版的內容',
+  'The content should at least have <b>[CONTENT]</b> somewhere.' => '內容中至少要包含一個 <b>[CONTENT]</b> 標籤。',
+  'Check that all links have a full URL' => '檢查所有連結網址是否完整',
+  'Check that all images have a full URL' => '檢查所有圖片網址是否完整',
+  'Check that all external images exist' => '檢查所有外部圖片是否存在',
+  'Save Changes' => '儲存',
+  'Save Images' => '儲存圖片',
+  'You can upload a template file or paste the text in the box below' => '您可以上傳樣板檔案或是透過下面表單貼上',
+  'Template file.' => '樣板檔案',
+
+);
+?>

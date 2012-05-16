@@ -1,0 +1,56 @@
+<?php
+$lan = array(
+  "This page can only be called from the commandline" => "Questa pagina pu&ograve; essere richiamata solo da linea di comando",
+  "Bounce processing error" => "Errore nella processazione del rimbalzo",
+  "Bounce Processing info" => "Informazioni processazione rimbalzo",
+  "error" => "errore",
+  "info" => "info",
+  "system message bounced, user marked unconfirmed" => "rimbalzo del messaggio di sistema, l'utente &egrave; stato segnato come non confermato",
+  "Bounced system message" => "rimbalzo del messaggio di sistema",
+  "User marked unconfirmed" => "Utente segnato come non confermato",
+  "View Bounce" => "Visualizza Rimbalzo",
+  "Cannot create POP3 connection to" => "Impossibile creare connessione POP3",
+  "Cannot open mailbox file" => "Impossibile aprire il file relativo alla mailbox",
+  "bounces to fetch from the mailbox" => "rimbalzi presi dalla mailbox",
+  "Please do not interrupt this process" => "Per favore non interrompere questo processo",
+  "bounces to process" => "rimbalzi da processare",
+  "Processing first" => "Processazione del primo",
+  "bounces" => "rimbalzi",
+  "Running in test mode, not deleting messages from mailbox" => "Esecuzione test, i messaggi della mailbox non saranno cancellati",
+  "Processed messages will be deleted from mailbox" => "I messaggi processati saranno cancellati dalla mailbox",
+  "Deleting message" => "Cancellazione messaggio",
+  "Closing mailbox, and purging messages" => "Chiusura mailbox ed eliminazione messaggi",
+  "IMAP is not included in your PHP installation, cannot continue" => "il protocollo IMAP non &egrave; incluso nella tua installazione PHP, impossibile continuare",
+  "Check out" => "Verifica",// or 'go look', 'consult', etc.
+  "Bounce mechanism not properly configured" => "Meccanismo di rimbalzo non configurato correttamente",
+  "bounce_protocol not supported" => "bounce_protocol non supportato",
+  "Identifying consecutive bounces" => "Identificazione rimbalzi consecutivi",
+  "Nothing to do" => "Niente da fare",
+  "Process Killed by other process" => "Processo interrotto da un altro processo",
+// 3 lines below = one sentence
+  "User" => "Utente",
+  "has consecutive bounces" => "ha rimbalzi consecutivi",
+  "over threshold, user marked unconfirmed" => "oltre la soglia, utente segnato come non confermato",
+  "Auto Unsubscribed" => "Auto cancellazione iscrizione",
+// 2 lines below = one sentence
+  "User auto unsubscribed for" => "Utente auto cancellato dall'iscrizione per",
+  "consecutive bounces" => "rimbalzi consecutivi",
+// 3 lines below = one sentence
+  "Identifying consecutive bounces" => "Identicazione rimbalzi consecutivi",
+  "of" => "di",
+  "users processed" => "utenti processati",
+  'processing first' => 'processazione del primo',
+  'Report:' => 'Rapporto:',
+  'Below are users who have been marked unconfirmed. The number in [] is their userid, the number in () is the number of consecutive bounces' => 'Di seguito ci sono gli utenti segnati come non confermati. Il numero tra [] &egrave; il loro ID utente, il numero fra () &egrave; il numero di rimbalzi consecutivi',
+  
+  ## new in 2.9.5
+  'Processing bounces based on active bounce rules' => 'Processazione rimbalzi basati sulle regole di rimbalzo attivo',
+  'Auto Blacklisted' => 'Inserito automaticamente nella blacklist',
+  'User auto blacklisted for' => 'Utente automaticamente inserito nella blacklist per',
+  'bounce rule' => 'regola rimbalzo',
+  'system message bounced, but unknown user' => 'messaggio di sistema rimbalzato, ma utente sconosciuto',
+  'bounces processed by advanced processing' => 'rimbalzi processati da processi avanzati',
+  'bounces were not matched by advanced processing rules' => 'i rimbalzi non hanno trovato corrispondenza con le regole dei processi avanzati',
+  'Report of advanced bounce processing:' => 'Rapporto del processo avanzato di rimbalzo:',
+);
+?>

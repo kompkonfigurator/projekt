@@ -1,0 +1,1 @@
+<br/><p>Grazie per avere usato <?php echo NAME?>.</p><p>Ora sei scollegato.</p><p>Per accedere nuovamente, clicca <a href='?page=home'>qui</a>.</p>

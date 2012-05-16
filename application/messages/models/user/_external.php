@@ -2,9 +2,9 @@
 
 return array(
     'password_confirm' => array(
-        'matches' => 'The password fields did not match.',
+        'matches' => __('The password fields did not match.'),
     ),
 	'password' => array(
-		'not_empty' => 'Please choose a password',
+		'not_empty' => __('Please choose a password'),
 	)
 );

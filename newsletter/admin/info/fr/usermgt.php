@@ -1,0 +1,3 @@
+
+<p>Vous trouvez ici des fonctions qui concernent la gestion des utilisateurs.  Vous pouvez dresser la liste des utilisateurs, chercher des utilisateurs, importer et exporter des utilisateurs, ou v&eacute;rifier la base de donn&eacute;es des utilisateurs pour trouver les dossiers non valides.</p>
+<p>Pour afficher les utilisateurs qui sont sur une liste, choisissez la liste et cliquez sur "voir membres"</p>

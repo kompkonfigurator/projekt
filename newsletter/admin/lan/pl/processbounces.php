@@ -1,0 +1,56 @@
+<?php
+$lan = array(
+  "This page can only be called from the commandline" => "Ta strona mo¿e byæ wywo³ana tylko z lini poleceñ",
+  "Bounce processing error" => "B³±d przetwarzania zwrotów",
+  "Bounce Processing info" => "Przetwarzanie zwrotów - informacja",
+  "error" => "b³±d",
+  "info" => "informacja",
+  "system message bounced, user marked unconfirmed" => "system wiadomo¶ci zwrotnych, u¿ytkownik oznaczony jako niepotwierdzony",
+  "Bounced system message" => "System wiadomo¶ci zwrotnych",
+  "User marked unconfirmed" => "U¿ytkownik oznaczony jako niepotwierdzony",
+  "View Bounce" => "Poka¿ zwrot",
+  "Cannot create POP3 connection to" => "Nie mo¿na utworzyæ po³±czenie POP3 do",
+  "Cannot open mailbox file" => "Nie mo¿na otworzyæ pliku skrzynki pocztowej",
+  "bounces to fetch from the mailbox" => "zwtorów do pobrania ze skrzynki pocztowej",
+  "Please do not interrupt this process" => "Proszê nie przerywaæ tego procesu",
+  "bounces to process" => "zwrotów do przetworzenia",
+  "Processing first" => "Przetwarzanie pierwszego",
+  "bounces" => "zwroty",
+  "Running in test mode, not deleting messages from mailbox" => "Uruchomiono w trybie tstowym. Wiadomo¶ci nie bêd± usuwane ze skrzynki pocztowej",
+  "Processed messages will be deleted from mailbox" => "Przetworzone wiadomo¶ci zostan± usuniête ze skrzynki pocztowej",
+  "Deleting message" => "Usuwanie wiadomo¶ci",
+  "Closing mailbox, and purging messages" => "Zamykanie skrzynki pocztowej i opró¿nianie wiadomo¶ci",
+  "IMAP is not included in your PHP installation, cannot continue" => "IMAP nie jest w³±czony w Twoj± instalacjê PHP, nie mo¿na kontynuowaæ",
+  "Check out" => "Sprawd¼",// or 'go look', 'consult', etc.
+  "Bounce mechanism not properly configured" => "Mechanizm zwrótów nie jest prawid³owo skonfigurowany",
+  "bounce_protocol not supported" => "Nieobs³ugiwany bounce_protocol",
+  "Identifying consecutive bounces" => "Identyfikacja kolejnych zwrotów",
+  "Nothing to do" => "Nie ma nic do zrobienia",
+  "Process Killed by other process" => "Proces zosta³ zatrzymany przez inny proces",
+// 3 lines below = one sentence
+  "User" => "U¿ytkownik",
+  "has consecutive bounces" => "ma kolejne zwroty",
+  "over threshold, user marked unconfirmed" => "powy¿ej progu, oznaczono u¿ytkownika jako niepotwierdzony",
+  "Auto Unsubscribed" => "Automatycznie anulowano subsktypcjê",
+// 2 lines below = one sentence
+  "User auto unsubscribed for" => "U¿ytkownikowi automatycznie anulowano subsktypcjê dla",
+  "consecutive bounces" => "nastêpnych zwrótów",
+// 3 lines below = one sentence
+  "Identifying consecutive bounces" => "Identyfikacja kolejnych zwrotów",
+  "of" => "z",
+  "users processed" => "u¿ytkowników przetworzonych",
+  'processing first' => 'przetwarzanie pierwszego',
+  'Report:' => 'Raport:',
+  'Below are users who have been marked unconfirmed. The number in [] is their userid, the number in () is the number of consecutive bounces' => 'Poni¿ej znajduj± siê u¿ytkownicy, którzy zostali oznaczeni jako niepotwierdzeni. Liczba w [] to ich identyfikator, liczba w () to ilo¶æ kolejnych zwrotów',
+  
+  ## new in 2.9.5
+  'Processing bounces based on active bounce rules' => 'Przetwarzanie zwrotów na podstawie aktywnych regu³ zwrotów',
+  'Auto Blacklisted' => 'Automatycznie dodano do czarnej listy',
+  'User auto blacklisted for' => 'U¿ytkownik zosta³ automatycznie dodany do czarnej listy dla',
+  'bounce rule' => 'regu³a zwrotów',
+  'system message bounced, but unknown user' => 'system wiadomo¶ci zwrotnych, nieznany u¿ytkownik',
+  'bounces processed by advanced processing' => 'zwroty przetworzono za pomoc± zaawansowanego przetwarzania',
+  'bounces were not matched by advanced processing rules' => 'zwroty nie zosta³y dopasowane do regu³ zaawansowanego przetwarzania',
+  'Report of advanced bounce processing:' => 'Raport z zaawansowanego przetwarzania wiadomo¶ci zwrotnych:',
+);
+?>

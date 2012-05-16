@@ -1,0 +1,33 @@
+<?php
+$lan = array (
+  'No such template' => '没有这个模板',
+  'Images stored' => '图片储存了',
+  'No images found' => '没有图片',
+  'Image' => '图片',
+  'not full URL' => '不是完整的网址',
+  'does not exist' => '不存在',
+  'Not a full URL:' => '不是完整的网址：',
+  'No Title' => '没有标题',
+  'Template does not contain the [CONTENT] placeholder' => '模板内容中没有 [CONTENT] 标籤',
+  'Template saved' => '模板储存了',
+  'Images' => '图片',
+  'Below is the list of images used in your template. If an image is currently unavailable, please upload it to the database.' => '下面是您在模板中使用到的图片，如果任何图片有问题，请记得重新上传到资料库。',
+  'This includes all images, also fully referenced ones, so you may choose not to upload some. If you upload images, they will be included in the emails that use this template.' => '这包含所有图片，即使是外部的档桉，所以您也许可以不需要上传部份图片。如果您上传了图片，他们将会包含在使用这个模板的信件中。',
+  'Image name:' => '图片名称：',
+  'times used' => '次使用',
+  'Template does not contain local images' => '模板不包含本机图片',
+  'Some errors were found, template NOT saved!' => '发生错误，模板未储存！',
+  'List of Templates' => '模板列表',
+  'Title of this template' => '这个模板的标题',
+  'Content of the template.' => '这个模板的内容',
+  'The content should at least have <b>[CONTENT]</b> somewhere.' => '内容中至少要包含一个 <b>[CONTENT]</b> 标籤。',
+  'Check that all links have a full URL' => '检查所有连结网址是否完整',
+  'Check that all images have a full URL' => '检查所有图片网址是否完整',
+  'Check that all external images exist' => '检查所有外部图片是否存在',
+  'Save Changes' => '储存',
+  'Save Images' => '储存图片',
+  'You can upload a template file or paste the text in the box below' => '您可以上传模板档桉或是透过下面表单贴上',
+  'Template file.' => '模板档桉',
+
+);
+?>

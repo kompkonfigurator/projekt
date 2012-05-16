@@ -1,0 +1,2 @@
+<p>Vous pouvez identifier ici les attributs que vous voulez que les administrateurs utilisent, attributs qui peuvent &ecirc;tre inclus dans les emails qu&rsquo;ils envoient &agrave; leur(s) liste(s).</p>
+<p><a href="#new">Ajouter un nouvel attribut</a></p>

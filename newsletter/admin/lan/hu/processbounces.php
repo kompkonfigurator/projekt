@@ -1,0 +1,56 @@
+<?php
+$lan = array(
+  "This page can only be called from the commandline" => "Ezt az oldalt csak a parancssorról hívhatja meg",
+  "Bounce processing error" => "Visszapattanó feldolgozási hiba",
+  "Bounce Processing info" => "Visszapattanó feldolgozási információ",
+  "error" => "hiba",
+  "info" => "információ",
+  "system message bounced, user marked unconfirmed" => "a rendszerüzenet visszapattant, a felhasználó visszaigazolatlanként jelölt",
+  "Bounced system message" => "Visszapattanó rendszerüzenet",
+  "User marked unconfirmed" => "A felhasználó visszaigazolatlanként jelölt",
+  "View Bounce" => "Visszapattanó megtekintése",
+  "Cannot create POP3 connection to" => "Nem létesíthető POP3-kapcsolat a következővel:",
+  "Cannot open mailbox file" => "Nem nyitható meg a postafiókfájl",
+  "bounces to fetch from the mailbox" => "a postafiókból lehívandó visszapattanók",
+  "Please do not interrupt this process" => "Kérjük, ne szakítsa félbe ezt a folyamatot",
+  "bounces to process" => "feldolgozandó visszapattanók",
+  "Processing first" => "Feldolgozandó első",
+  "bounces" => "visszapattanók",
+  "Running in test mode, not deleting messages from mailbox" => "A phplist teszt módban fut, nem törli az üzeneteket a postafiókból",
+  "Processed messages will be deleted from mailbox" => "A feldolgozott üzenetek törlésre kerülnek a postafiókból",
+  "Deleting message" => "Üzenet törlése",
+  "Closing mailbox, and purging messages" => "A postafiók bezárása és az üzenetek kiürítése",
+  "IMAP is not included in your PHP installation, cannot continue" => "A PHP-telepítés nem tartalmaz IMAP kiszolgálót, a művelet nem folytatható",
+  "Check out" => "Nézze meg",// or 'go look', 'consult', etc.
+  "Bounce mechanism not properly configured" => "A visszapattanók mechanizmusának nem megfelelő a beállítása",
+  "bounce_protocol not supported" => "A bounce_protocol nem támogatott",
+  "Identifying consecutive bounces" => "A folyamatosan visszapattanók beazonosítása",
+  "Nothing to do" => "Nincs végrehajtandó feladat",
+  "Process Killed by other process" => "A folyamatot leállította egy másik folyamat",
+// 3 lines below = one sentence
+  "User" => "A felhasználónak",
+  "has consecutive bounces" => "a küszöbérték feletti folyamatos visszapattanói vannak,",
+  "over threshold, user marked unconfirmed" => "a felhasználó visszaigazolatlanként megjelölt",
+  "Auto Unsubscribed" => "Automatikusan lemondott",
+// 2 lines below = one sentence
+  "User auto unsubscribed for" => "A felhasználó automatikusan lemondott",
+  "consecutive bounces" => "a folyamatos visszapattanókhoz",
+// 3 lines below = one sentence
+  "Identifying consecutive bounces" => "A folyamatosan visszapattanók beazonosítása",
+  "of" => "of",
+  "users processed" => "felhasználó feldolgozva",
+  'processing first' => 'feldolgozás előbb',
+  'Report:' => 'Jelentés:',
+  'Below are users who have been marked unconfirmed. The number in [] is their userid, the number in () is the number of consecutive bounces' => 'Alább láthatók a nem visszaigazoltként megjelölt felhasználók. A []-be tett szám a felhasználói azonosítószámuk, a ()-be tett szám a folyamatosan visszapattanók száma',
+  
+  ## new in 2.9.5
+  'Processing bounces based on active bounce rules' => 'Visszapattanók feldolgozása az aktív visszapattanási szabályok alapján',
+  'Auto Blacklisted' => 'Automatikusan feketelistára vettek',
+  'User auto blacklisted for' => 'A felhasználó automatikusan feketelistára került for',
+  'bounce rule' => 'visszapattanási szabály',
+  'system message bounced, but unknown user' => 'rendszerüzenet pattant vissza, a felhasználó viszont ismeretlen',
+  'bounces processed by advanced processing' => 'visszapattanó feldolgozva speciális feldolgozással',
+  'bounces were not matched by advanced processing rules' => 'visszapattanó nem felelt meg a speciális visszapattanási szabályoknak',
+  'Report of advanced bounce processing:' => 'Jelentés a speciális visszapattanási feldolgozásról:',
+);
+?>

@@ -1,0 +1,72 @@
+<?php
+$lan = array(
+  "Import emails from IMAP folders" => "Importar emails de directorios IMAP",
+  "No lists available" => "No hay listas disponibles",
+  "Add a list" => "A&ntilde;adir una lista",
+  "personal" => "personal",
+  "email" => "email",
+  "folder" => "directorio",
+  "date" => "fecha",
+  "can't connect" => "no se puede conectar",
+  "Processing" => "Procesando",
+  "messages" => "mensajes",
+  "done" => "listo",
+  "imap_getmailboxes failed" => "imap_getmailboxes fracas&oacute;",
+  "Please enter details of the IMAP account" => "Introduzca los datos
+  de la cuenta IMAP",
+  "Select the headers fields to search" => "Seleccione los campos de la
+  cabecera en los que hay que buscar",
+  "Select the lists to add the emails to" => "Seleccione las listas a
+  las que hay que a&ntilde;adir los emails",
+  "Adding users to list" => "A&ntilde;adiendo usuarios a la lista",
+  "Mark new users as HTML" => "Seleccionar HTML para los nuevos usuarios",
+/* read lines below as sentences: if you check 'overwrite' information about a user... etc. */
+  "If you check" => "Si marca la casilla",
+  "Overwrite Existing" => "Sobreescribir",
+  "information about a user in the database will be replaced by the imported information. Users are matched by email." => "la informaci&oacute;n que hay en la base sobre el usuario ser&aacute; reemplazada por la informaci&oacute;n importada. A los usuarios se les identifica por el email",
+  "Only use complete addresses" => "Utilice solamente direcciones completas",
+  "addresses that do not have a real name will be ignored. Otherwise all emails will be imported." => "se har&aacute; caso omiso de las direcciones que no contengan un nombre real. Aparte de esto se importar&aacute;n todos los emails.",
+  "If you choose" => "Si escoje",
+  "send notification email" => "enviar correo de notificaci&oacute;n",
+  "the users you are adding will be sent the request for confirmation of subscription to which they will have to reply. This is recommended, because it will identify invalid emails." => "los usuarios que est&aacute; a&ntilde;adiendo recibir&aacute;n un correo pidi&eacute;ndoles que confirmen su inscripci&oacute;n, al que deber&aacute;n responder. Se recomienda esta opci&oacute;n porque elimina los emails no v&aacute;lidos.",
+  "Send&nbsp;Notification&nbsp;email&nbsp;" => "Enviar&nbsp;correo&nbsp;de&nbsp;notificaci&oacute;n&nbsp;",
+  "Make confirmed immediately" => "Confirmar inmediatamente&nbsp;",
+  "import3info" => "Hay dos modos de a&ntilde;adir los nombres de los
+  usuarios: o bien con un solo atributo para el nombre completo, o
+  bien con dos atributos, uno para el nombre y otro para el
+  apellido. Si utiliza &#171;dos atributos&#187; el nombre quedar&aacute;
+  dividido por el primer espacio en blanco.",
+  "Use one attribute for name" => "Utilizar un solo atributo por nombre",
+  'Use two attributes for the name' => 'Utilizar dos atributos por nombre',
+  "Attribute one" => "Primer atributo",
+  "Create Attribute" => "Crear atributo",
+  "Attribute two" => "Segundo atributo",
+  "Cannot continue" => "No se puede continuar",
+  "ok" => "ok",
+  "failed" => "fracasado",
+  "Processed" => "Procesado",
+  "folders and" => "directorios y",
+  "unique emails found" => "emails &uacute;nicos encontrados",
+  "list" => "lista",
+  "lists" => "listas",
+  "new email was" => "el nuevo email era",
+  "new emails were" => "los nuevos emails eran",
+  "email was" => "el email era",
+  "emails were" => "los emails eran",
+  "All the emails already exist in the database and are members of the" => "todos los emails estaban ya en la base de datos y son miembros de",
+  "succesfully imported to the database and added to" => "importados a la base de datos y a&ntilde;adidos a",
+  "subscribed to the" => "suscrito a la",
+  "emails already existed in the database" => "algunos emails ya estaban en la base de datos",
+  "Invalid Emails found." => "Se han encontrado emails no v&aacute;lidos.",
+  "These records were added, but the email has been made up. You can find them by doing a search on" => "Se han a&ntilde;adido estos
+  registros, pero el email es inventado. Puede encontrarlos buscando",
+  "These records were deleted. Check your source and reimport the data. Duplicates will be identified." => "Se eliminaron estos registros. Compruebe el origen e importe los datos de nuevo. Se identificar&aacute;n los registros duplicados.",
+  "No emails found" => "No se encontr&oacute; ning&uacute;n correo",
+  "Import some more emails" => "Importar m&aacute;s emails",
+  'Server' => 'Servidor',
+  'User' => 'Usuario',
+  'Password' => 'Contrase&ntilde;a',
+  'Continue' => 'Continuar',
+  'Process Selected Folders' => 'Procesar los directorios seleccionados',
+);
+?>

@@ -9,7 +9,10 @@ class Controller_Default extends Controller_Template {
  
     public function  __construct(Request $request, Response $response) {
         parent::__construct($request, $response);
- 
+ if(isset($_COOKIE['lang'])){
+            setcookie("lang", $_COOKIE['lang'],31536000 + time(),'/');
+            I18n::lang($_COOKIE['lang']);
+        }
         //Create sesion
         if(!isset ($_SESSION)){
             $this->SES = Session::instance();
@@ -65,14 +68,31 @@ class Controller_Default extends Controller_Template {
  
                 $this->template->styles = array_merge( $this->template->styles, $styles );
                 $this->template->scripts = array_merge( $scripts , $this->template->scripts);
+				$this->template->langs=Kohana::$config->load('lang');
         }
         parent::after();
     }
  
     public function action_index() {
+        $this->template->content=View::factory('home');
         $this->template->title = __('Home');
-        $this->template->content=view::factory('/main');
+
         $this->template->top_tab='home';
-		
+		$konf = Model::factory('form');
+		$allkonf = $konf -> getAllKonf();
+		for($i=0; $i<sizeof($allkonf); $i++)
+		{
+		foreach($allkonf[$i] as $key => $val)
+		{
+			if(preg_match('/id_.*/', $key))
+			{
+				//echo Debug::vars($konf -> getName_byProduktId($val));
+				$allkonf[$i][$key] = $konf -> getName_byProduktId($val);
+				$allkonf[$i][$key] = (sizeof($allkonf[$i][$key])!=0)? $allkonf[$i][$key][0]['name'] : NULL;
+			}
+		}
+		}
+		$this->template->content->konf = $allkonf;
+		$this->template->content->model = $konf -> return_model();
     }
 }

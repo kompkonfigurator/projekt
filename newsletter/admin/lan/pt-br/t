@@ -1,0 +1,18 @@
+<?php
+
+## notes to translators:
+# do not translate anything in square brackets: eg [RSS] 
+
+$lan = array (
+  'selectlists' => 'Selecione as listas para as quais voc&ecirc; deseja enviar',
+  'alllists' => 'Todas listas',
+  'All Active Lists' => 'Todas listas ativas',
+  'listactive' => 'Lista ativa',
+  'listnotactive' => 'Lista inativa',
+  'selectexcludelist' => 'Selecione as listas a serem exclu&iacute;das',
+  'excludelistexplain' => 'A mensagem ser&aacute; enviada aos usu&aacute;rios membros da lista acima, a menos que sejam membros de uma das listas selecionada aqui.',
+  'nolistsavailable' => 'Nenhuma lista dispon&iacute;vel',
+  'sendmessage' => 'Enviar a mensagem para as listas seleciondas',
+);
+
+?>
