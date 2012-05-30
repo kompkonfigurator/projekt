@@ -1,0 +1,2 @@
+#!/bin/bash
+rm Plyty Plyty2.xml Plyty.xml Procesory Procesory2.xml Procesory.xml Pamieci Pamieci2.xml Pamieci.xml Klawiatury Klawiatury2.xml Klawiatury.xml Myszki Myszki2.xml Myszki.xml Dyski Dyski2.xml Dyski.xml Napedy Napedy2.xml Napedy.xml Obudowy Obudowy2.xml Obudowy.xml Zasilacze Zasilacze2.xml Zasilacze.xml Muzyczne Muzyczne2.xml Muzyczna.xml Grafiki Grafiki2.xml Grafiki3.xml Grafiki.xml $1 test* Sklepy* 

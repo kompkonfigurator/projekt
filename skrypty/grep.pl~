@@ -1,0 +1,1 @@
+$licznik = qx { grep -wc "<item>" PlytyGlowne };

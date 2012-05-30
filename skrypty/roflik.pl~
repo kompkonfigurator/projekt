@@ -1,0 +1,9 @@
+#!/usr/bin/perl -w
+if($ARGV[0]=="166")
+{
+	print "klawa";
+}
+else
+{
+	print "dupa";
+}
